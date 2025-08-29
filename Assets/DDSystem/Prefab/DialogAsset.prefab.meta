@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d536fa71dd00cf349a228e41212ace48
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 167312
+  packageName: D'Dialogue System
+  packageVersion: 1.13
+  assetPath: Assets/DDSystem/Prefab/DialogAsset.prefab
+  uploadId: 414494
