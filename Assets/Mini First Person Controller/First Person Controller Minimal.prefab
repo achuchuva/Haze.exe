@@ -679,8 +679,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
   defaultFOV: 60
   maxZoomFOV: 30
   currentZoom: 0
-  sensitivity: 1
+  sensitivity: 2
 --- !u!1 &5242082517093631028
 GameObject:
   m_ObjectHideFlags: 0

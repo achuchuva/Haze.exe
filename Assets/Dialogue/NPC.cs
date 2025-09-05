@@ -7,10 +7,11 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
+        if (isPlayerNearby && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
-            if (!DialogueManager.Instance.gameObject.activeInHierarchy)
+            if (!DialogueManager.Instance.DialogueActive)
             {
+                DialogueManager.Instance.HideInteractPrompt();
                 DialogueManager.Instance.StartDialogue(dialogue);
             }
             else
@@ -23,12 +24,18 @@ public class NPC : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             isPlayerNearby = true;
+            DialogueManager.Instance.ShowInteractPrompt();
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
             isPlayerNearby = false;
+            DialogueManager.Instance.HideInteractPrompt();
+        }
     }
 }
