@@ -8,6 +8,8 @@ public class PortalTeleporter : MonoBehaviour {
 	public Transform reciever;
 
 	private bool playerIsOverlapping = false;
+	private float lastTeleportTime = 0f;
+	private static readonly float TELEPORT_COOLDOWN = 0.25f;
 
 	// Update is called once per frame
 	void Update () {
@@ -19,15 +21,21 @@ public class PortalTeleporter : MonoBehaviour {
 			// If this is true: The player has moved across the portal
 			if (dotProduct < 0f)
 			{
+				if (Time.time - lastTeleportTime < TELEPORT_COOLDOWN)
+				{
+					return;
+				}
+				
 				// Teleport him!
-				float rotationDiff = -Quaternion.Angle(transform.rotation, reciever.rotation);
-				rotationDiff += 180;
-				player.Rotate(Vector3.up, rotationDiff);
+				float rotationDiff = reciever.root.eulerAngles.y - transform.root.eulerAngles.y + 180f;
+				player.GetComponentInChildren<FirstPersonLook>().AddYaw(rotationDiff);
 
 				Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
 				player.position = reciever.position + positionOffset;
 
 				playerIsOverlapping = false;
+
+				reciever.GetComponent<PortalTeleporter>().lastTeleportTime = Time.time;
 			}
 		}
 	}
