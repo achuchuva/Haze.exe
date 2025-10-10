@@ -5,8 +5,10 @@ public class DoorPlacer : MonoBehaviour
     [Header("Placement Parameters")]
     [SerializeField] private GameObject doorPrefab;
     [SerializeField] private GameObject previewDoorPrefab;
+    [SerializeField] private Transform player;
     [SerializeField] private Camera playerCamera;
     [SerializeField] private LayerMask placementSurfaceLayerMask;
+    [SerializeField] private LayerMask obstacleLayerMask;
 
     [Header("Preview Material")]
     [SerializeField] private Material previewMaterial;
@@ -18,42 +20,25 @@ public class DoorPlacer : MonoBehaviour
     [SerializeField] private float raycastStartVerticalOffset;
     [SerializeField] private float raycastDistance;
 
-    [Header("Smoothing")]
-    [SerializeField] private float positionSmoothSpeed;
-    [SerializeField] private float rotationSmoothSpeed;
+    [Header("Minimap")]
+    [SerializeField] private Minimap minimap;
 
     private GameObject _previewObject = null;
     private Vector3 _currentPlacementPosition = Vector3.zero;
-    private Vector3 _targetPlacementPosition = Vector3.zero;
-    private float _targetRotationY = 0f;
     private bool _inPlacementMode = false;
     private bool _validPreviewState = false;
-    private Transform _characterTransform = null;
+    private PortalTeleporter _door = null;
 
-    void Start()
-    {
-        // Get the character transform (parent of camera) for stable rotation
-        if (playerCamera != null)
-        {
-            FirstPersonMovement fpsMovement = playerCamera.GetComponentInParent<FirstPersonMovement>();
-            if (fpsMovement != null)
-            {
-                _characterTransform = fpsMovement.transform;
-            }
-        }
-        
-        // Fallback to camera's parent if FirstPersonMovement not found
-        if (_characterTransform == null && playerCamera != null)
-        {
-            _characterTransform = playerCamera.transform.parent;
-        }
-    }
+    public bool Disabled { get; set; } = false;
 
     // Update is called once per frame
     void Update()
     {
         UpdateInput();
+    }
 
+    void FixedUpdate()
+    {
         if (_inPlacementMode)
         {
             UpdateCurrentPlacementPosition();
@@ -71,49 +56,27 @@ public class DoorPlacer : MonoBehaviour
 
     void UpdateCurrentPlacementPosition()
     {
-        // Use character transform for stable rotation, not camera
-        Transform rotationSource = _characterTransform != null ? _characterTransform : playerCamera.transform;
-        
-        // Get forward direction on horizontal plane only (ignore vertical tilt)
-        Vector3 horizontalForward = new Vector3(rotationSource.forward.x, 0f, rotationSource.forward.z);
-        
-        // Ensure we have a valid direction
-        if (horizontalForward.sqrMagnitude < 0.01f)
-        {
-            horizontalForward = rotationSource.forward;
-            horizontalForward.y = 0f;
-        }
-        
-        horizontalForward.Normalize();
+        Vector3 cameraForward = new Vector3(playerCamera.transform.forward.x, 0f, playerCamera.transform.forward.z);
+        cameraForward.Normalize();
 
-        // Calculate raycast start position
-        Vector3 startPos = playerCamera.transform.position + (horizontalForward * doorDistanceFromPlayer);
+        Vector3 startPos = playerCamera.transform.position + (cameraForward * doorDistanceFromPlayer);
         startPos.y += raycastStartVerticalOffset;
 
-        // Perform raycast to find ground position
         RaycastHit hitInfo;
         if (Physics.Raycast(startPos, Vector3.down, out hitInfo, raycastDistance, placementSurfaceLayerMask))
         {
-            _targetPlacementPosition = hitInfo.point;
+            _currentPlacementPosition = hitInfo.point;
         }
 
-        // Smooth position to reduce jitter
-        _currentPlacementPosition = Vector3.Lerp(_currentPlacementPosition, _targetPlacementPosition, 
-            Time.deltaTime * positionSmoothSpeed);
-
-        // Smooth rotation using the stable character rotation
-        float targetYaw = rotationSource.eulerAngles.y;
-        _targetRotationY = Mathf.LerpAngle(_targetRotationY, targetYaw, Time.deltaTime * rotationSmoothSpeed);
-        
-        Quaternion rotation = Quaternion.Euler(0f, _targetRotationY, 0f);
-        
-        // Update preview object
+        Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
         _previewObject.transform.position = _currentPlacementPosition;
         _previewObject.transform.rotation = rotation;
     }
 
     void UpdateInput()
     {
+        if (Disabled) return;
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             if (_inPlacementMode)
@@ -147,6 +110,19 @@ public class DoorPlacer : MonoBehaviour
     {
         if (_previewObject == null) return false;
 
+        Vector3 cameraForward = playerCamera.transform.forward;
+        Vector3 playerPosXZ = new Vector3(playerCamera.transform.position.x, 0f, playerCamera.transform.position.z);
+        Vector3 placementPosXZ = new Vector3(_currentPlacementPosition.x, 0f, _currentPlacementPosition.z);
+        float horizontalDistance = Vector3.Distance(playerPosXZ, placementPosXZ);
+        Vector3 horizontalDirection = new Vector3(cameraForward.x, 0f, cameraForward.z).normalized;
+
+        Debug.DrawRay(playerCamera.transform.position, horizontalDirection * horizontalDistance, Color.red);
+        if (Physics.Raycast(playerCamera.transform.position, horizontalDirection, horizontalDistance, obstacleLayerMask))
+        {
+            // Raycast hit an obstacle. The path is blocked.
+            return false;
+        }
+
         foreach (var checker in _previewObject.GetComponentsInChildren<DoorValidChecker>())
         {
             if (!checker.IsValid) return false;
@@ -158,48 +134,46 @@ public class DoorPlacer : MonoBehaviour
     {
         if (!_inPlacementMode || !_validPreviewState) return;
 
-        // Use the actual preview object's rotation for consistency
-        Quaternion rotation = _previewObject.transform.rotation;
-        Instantiate(doorPrefab, _currentPlacementPosition, rotation, transform);
+        Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
+        GameObject door = Instantiate(doorPrefab, _currentPlacementPosition, rotation);
+        _door = door.GetComponentInChildren<PortalTeleporter>();
 
         ExitPlacementMode();
+
+        minimap.ActivateMinimap();
+        minimap.Locked = true;
+        minimap.OnMinimapClick.AddListener(PlaceSecondDoor);
+    }
+
+    void PlaceSecondDoor(Vector3 position)
+    {
+        position.y = _currentPlacementPosition.y;
+        Quaternion rotation = Quaternion.Euler(0f, _door.transform.eulerAngles.y + 180f, 0f);
+
+        GameObject secondDoor = Instantiate(doorPrefab, position, rotation);
+        PortalTeleporter _secondDoor = secondDoor.GetComponentInChildren<PortalTeleporter>();
+
+        // Link the two doors.
+        _door.reciever = _secondDoor.transform;
+        _door.player = player;
+        _secondDoor.reciever = _door.transform;
+        _secondDoor.player = player;
+
+        minimap.Locked = false;
+        minimap.OnMinimapClick.RemoveListener(PlaceSecondDoor);
     }
 
     void EnterPlacementMode()
     {
         if (_inPlacementMode) return;
 
-        // Initialize target rotation from character transform
-        Transform rotationSource = _characterTransform != null ? _characterTransform : playerCamera.transform;
-        _targetRotationY = rotationSource.eulerAngles.y;
-        
-        Quaternion rotation = Quaternion.Euler(0f, _targetRotationY, 0f);
-        
-        // Initialize placement position to avoid initial jump
-        Vector3 horizontalForward = new Vector3(rotationSource.forward.x, 0f, rotationSource.forward.z);
-        if (horizontalForward.sqrMagnitude < 0.01f)
-        {
-            horizontalForward = rotationSource.forward;
-            horizontalForward.y = 0f;
-        }
-        horizontalForward.Normalize();
-        
-        Vector3 startPos = playerCamera.transform.position + (horizontalForward * doorDistanceFromPlayer);
-        startPos.y += raycastStartVerticalOffset;
-        
-        RaycastHit hitInfo;
-        if (Physics.Raycast(startPos, Vector3.down, out hitInfo, raycastDistance, placementSurfaceLayerMask))
-        {
-            _currentPlacementPosition = hitInfo.point;
-            _targetPlacementPosition = hitInfo.point;
-        }
-        
+        Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
         _previewObject = Instantiate(previewDoorPrefab, _currentPlacementPosition, rotation, transform);
         _inPlacementMode = true;
 
     }
 
-    void ExitPlacementMode()
+    public void ExitPlacementMode()
     {
         Destroy(_previewObject);
         _previewObject = null;
