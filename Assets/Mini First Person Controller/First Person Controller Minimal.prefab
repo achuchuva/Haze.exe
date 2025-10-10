@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1919019609379411264}
   - component: {fileID: 344904778207081987}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Landing Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5348414136412221763}
   - component: {fileID: 7492485762413666113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Step Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 2415481549386893173}
   - component: {fileID: 3363232149434578053}
   - component: {fileID: 1273943041345557981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Capsule Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: df2363b01c21c4de7862d3351b98afc0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -378,7 +378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5240771479555520432}
   - component: {fileID: 5240771479555520433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: First Person Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 5286307983767585980}
   - component: {fileID: 5222740939418225544}
   - component: {fileID: 5269945355364510514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: First Person Controller Minimal
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   - component: {fileID: 5273061343101857912}
   - component: {fileID: 3503371184025909721}
   - component: {fileID: 5184740187153197433}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: First Person Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -726,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5235998417850327242}
   - component: {fileID: 5272657471857185710}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: 0}
