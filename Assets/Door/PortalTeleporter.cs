@@ -25,17 +25,22 @@ public class PortalTeleporter : MonoBehaviour {
 				{
 					return;
 				}
-				
+				player.GetComponent<FirstPersonMovement>().controller.enabled = false;
+
 				// Teleport him!
 				float rotationDiff = reciever.root.eulerAngles.y - transform.root.eulerAngles.y + 180f;
 				player.GetComponentInChildren<FirstPersonLook>().AddYaw(rotationDiff);
 
 				Vector3 positionOffset = Quaternion.Euler(0f, rotationDiff, 0f) * portalToPlayer;
+				positionOffset += reciever.up * 0.5f;
+				positionOffset -= reciever.forward * 0.5f;
 				player.position = reciever.position + positionOffset;
 
 				playerIsOverlapping = false;
 
 				reciever.GetComponent<PortalTeleporter>().lastTeleportTime = Time.time;
+
+				player.GetComponent<FirstPersonMovement>().controller.enabled = true;
 			}
 		}
 	}

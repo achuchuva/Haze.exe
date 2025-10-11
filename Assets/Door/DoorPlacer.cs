@@ -85,6 +85,11 @@ public class DoorPlacer : MonoBehaviour
             }
             else
             {
+                if (DoorManager.Instance.doorCount < 1)
+                {
+                    WarningFlash.Instance.FlashWarning("NO DOORS", 80);
+                    return;
+                }
                 EnterPlacementMode();
             }
         }
@@ -138,6 +143,8 @@ public class DoorPlacer : MonoBehaviour
         GameObject door = Instantiate(doorPrefab, _currentPlacementPosition, rotation);
         _door = door.GetComponentInChildren<PortalTeleporter>();
 
+        DoorManager.Instance.doorCount -= 1;
+
         ExitPlacementMode();
 
         minimap.ActivateMinimap();
@@ -147,17 +154,49 @@ public class DoorPlacer : MonoBehaviour
 
     void PlaceSecondDoor(Vector3 position)
     {
+        if (Physics.CheckSphere(position + new Vector3(0, 1, 0), 1.25f, obstacleLayerMask))
+        {
+            WarningFlash.Instance.FlashWarning("CAN'T PLACE THERE", 80);
+            return;
+        }
+
         position.y = _currentPlacementPosition.y;
-        Quaternion rotation = Quaternion.Euler(0f, _door.transform.eulerAngles.y + 180f, 0f);
+        // Find the rotation that can shoot a the longest raycast distance without hitting an obstacle.
+        Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
+        Vector3 bestDirection = rotation * Vector3.forward;
+        float bestDistance = 0f;
+        int rayCount = 16;
+        for (int i = 0; i < rayCount; i++)
+        {
+            float angle = (360f / rayCount) * i;
+            Vector3 direction = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
+            RaycastHit hitInfo;
+            if (Physics.Raycast(position + new Vector3(0, 1, 0), direction, out hitInfo, 100f, obstacleLayerMask))
+            {
+                if (hitInfo.distance > bestDistance)
+                {
+                    bestDistance = hitInfo.distance;
+                    bestDirection = direction;
+                }
+            }
+            else
+            {
+                bestDirection = direction;
+                break;
+            }
+        }
 
         GameObject secondDoor = Instantiate(doorPrefab, position, rotation);
         PortalTeleporter _secondDoor = secondDoor.GetComponentInChildren<PortalTeleporter>();
+
+        DoorManager.Instance.doorCount -= 1;
 
         // Link the two doors.
         _door.reciever = _secondDoor.transform;
         _door.player = player;
         _secondDoor.reciever = _door.transform;
         _secondDoor.player = player;
+        _door.GetComponentInParent<Door>().Other = _secondDoor.GetComponentInParent<Door>();
 
         minimap.Locked = false;
         minimap.OnMinimapClick.RemoveListener(PlaceSecondDoor);

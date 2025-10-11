@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPC : MonoBehaviour
 {
     public Dialogue dialogue;
     private bool isPlayerNearby;
+    public UnityEvent OnDialogueStart;
 
     void Update()
     {
@@ -13,6 +15,7 @@ public class NPC : MonoBehaviour
             {
                 DialogueManager.Instance.HideInteractPrompt();
                 DialogueManager.Instance.StartDialogue(dialogue);
+                OnDialogueStart?.Invoke();
             }
             else
             {

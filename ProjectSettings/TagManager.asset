@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Portal
+  - Wall
+  - Haze
+  - Outside
+  - Ground
   layers:
   - Default
   - TransparentFX

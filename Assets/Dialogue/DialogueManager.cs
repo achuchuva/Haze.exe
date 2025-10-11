@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro; // For TextMeshPro UI
 using UnityEngine.UI;
+using UnityEngine.Events;
 using System.Collections;
 
 public class DialogueManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     [Header("UI")]
     public GameObject dialoguePanel;
     public TMP_Text dialogueText;
+    public TMP_Text nameText;
     public GameObject interactPromptPanel;
 
     [Header("Settings")]
@@ -18,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     public float typeSpeed = 0.05f; // Seconds per character
 
     public bool DialogueActive { get; private set; }
+    public UnityEvent OnDialogueEnd;
 
     private string[] lines;
     private int index;
@@ -36,6 +39,13 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        // Disable a bunch of stuff
+        FindObjectOfType<DoorPlacer>().Disabled = true;
+        FindObjectOfType<FirstPersonMovement>().Disable();
+        FindObjectOfType<FirstPersonLook>().Disabled = true;
+        FindObjectOfType<Minimap>().Locked = true;
+
+        nameText.text = dialogue.name;
         lines = dialogue.lines;
         index = 0;
         dialoguePanel.SetActive(true);
@@ -119,7 +129,14 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        OnDialogueEnd?.Invoke();
         dialoguePanel.SetActive(false);
         DialogueActive = false;
+
+        // Re-enable all the stuff
+        FindObjectOfType<DoorPlacer>().Disabled = false;
+        FindObjectOfType<FirstPersonMovement>().Enable();
+        FindObjectOfType<FirstPersonLook>().Disabled = false;
+        FindObjectOfType<Minimap>().Locked = false;
     }
 }

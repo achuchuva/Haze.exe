@@ -46,6 +46,12 @@ public class MinimapClickHandler : MonoBehaviour, IPointerClickHandler
 
         if (Physics.Raycast(MapRay, out miniMapHit, Mathf.Infinity))
         {
+            Debug.Log("Hit tag: " + miniMapHit.collider.tag);
+            if (miniMapHit.collider.tag != "Ground")
+            {
+                WarningFlash.Instance.FlashWarning("CAN'T PLACE THERE", 80);
+                return;
+            }
             minimap.MinimapClick(miniMapHit.point);
         }
         

@@ -1,8 +1,11 @@
 using UnityEngine;
+using TMPro;
 using UnityEngine.Events;
 
 public class Minimap : MonoBehaviour
 {
+    public GameObject minimapIcon;
+    public TMP_Text doorCountText;
     public GameObject camera;
     public GameObject image;
     public GameObject mazeGEO;
@@ -23,6 +26,8 @@ public class Minimap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        doorCountText.text = "Doors Remaining: " + DoorManager.Instance.doorCount.ToString();
+
         if (Locked) return;
 
         if (Input.GetKeyDown(KeyCode.M))
@@ -42,15 +47,15 @@ public class Minimap : MonoBehaviour
     {
         _isMinimapActive = true;
 
+        minimapIcon.SetActive(false);
         camera.SetActive(true);
         image.SetActive(true);
         mazeGEO.SetActive(true);
 
         Cursor.lockState = CursorLockMode.None;
 
-        firstPersonMovement.Disabled = true;
+        firstPersonMovement.Disable();
         firstPersonLook.Disabled = true;
-        player.GetComponent<Rigidbody>().freezeRotation = true;
 
         DoorPlacer doorPlacer = GameObject.FindObjectOfType<DoorPlacer>();
         doorPlacer.ExitPlacementMode();
@@ -63,15 +68,15 @@ public class Minimap : MonoBehaviour
     {
         _isMinimapActive = false;
 
+        minimapIcon.SetActive(true);
         camera.SetActive(false);
         image.SetActive(false);
         mazeGEO.SetActive(false);
 
         Cursor.lockState = CursorLockMode.Locked;
 
-        firstPersonMovement.Disabled = false;
+        firstPersonMovement.Enable();
         firstPersonLook.Disabled = false;
-        player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
         DoorPlacer doorPlacer = GameObject.FindObjectOfType<DoorPlacer>();
         doorPlacer.Disabled = false;
