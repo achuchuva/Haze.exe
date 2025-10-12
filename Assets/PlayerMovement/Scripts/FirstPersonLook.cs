@@ -6,6 +6,7 @@ public class FirstPersonLook : MonoBehaviour
     Transform character;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
+    public float startingRotation = 0f;
 
     Vector2 velocity;
     Vector2 frameVelocity;
@@ -22,6 +23,7 @@ public class FirstPersonLook : MonoBehaviour
     {
         // Lock the mouse cursor to the game screen.
         Cursor.lockState = CursorLockMode.Locked;
+        velocity.x = startingRotation;
     }
 
     void Update()

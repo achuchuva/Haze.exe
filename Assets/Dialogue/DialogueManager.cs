@@ -41,9 +41,11 @@ public class DialogueManager : MonoBehaviour
     {
         // Disable a bunch of stuff
         FindObjectOfType<DoorPlacer>().Disabled = true;
+        FindObjectOfType<DoorPlacer>().ExitPlacementMode();
+        FindObjectOfType<Minimap>().Locked = true;
+        FindObjectOfType<Minimap>().DisableMinimap();
         FindObjectOfType<FirstPersonMovement>().Disable();
         FindObjectOfType<FirstPersonLook>().Disabled = true;
-        FindObjectOfType<Minimap>().Locked = true;
 
         nameText.text = dialogue.name;
         lines = dialogue.lines;
@@ -135,8 +137,8 @@ public class DialogueManager : MonoBehaviour
 
         // Re-enable all the stuff
         FindObjectOfType<DoorPlacer>().Disabled = false;
+        FindObjectOfType<Minimap>().Locked = false;
         FindObjectOfType<FirstPersonMovement>().Enable();
         FindObjectOfType<FirstPersonLook>().Disabled = false;
-        FindObjectOfType<Minimap>().Locked = false;
     }
 }

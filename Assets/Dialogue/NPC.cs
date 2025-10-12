@@ -6,6 +6,7 @@ public class NPC : MonoBehaviour
     public Dialogue dialogue;
     private bool isPlayerNearby;
     public UnityEvent OnDialogueStart;
+    public GameObject[] removedHaze;
 
     void Update()
     {
@@ -16,11 +17,24 @@ public class NPC : MonoBehaviour
                 DialogueManager.Instance.HideInteractPrompt();
                 DialogueManager.Instance.StartDialogue(dialogue);
                 OnDialogueStart?.Invoke();
+                DialogueManager.Instance.OnDialogueEnd.AddListener(DialogueEnd);
             }
             else
             {
                 DialogueManager.Instance.NextLine();
             }
+        }
+    }
+
+    public void DialogueEnd()
+    {
+        isPlayerNearby = true;
+        DialogueManager.Instance.ShowInteractPrompt();
+        DialogueManager.Instance.OnDialogueEnd.RemoveListener(DialogueEnd);
+
+        foreach (GameObject haze in removedHaze)
+        {
+            haze.SetActive(false);
         }
     }
 

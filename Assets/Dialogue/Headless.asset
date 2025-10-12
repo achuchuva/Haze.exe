@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
-  m_Name: Petah
+  m_Name: Headless
   m_EditorClassIdentifier: 
-  name: Peter Griffin
+  name: Dude who got his head chopped off like holy f*ck
   lines:
-  - Welcome to HAZE.exe! Eternal digital damnation. You must be new here
-  - Check your minimap using M.
-  - Does he know about the D-O-R-E?
+  - No I'm fine I honestly don't see what the fuss is about like you just gotta roll
+    with the punches you know what I'm saying?

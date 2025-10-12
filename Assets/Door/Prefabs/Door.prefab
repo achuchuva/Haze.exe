@@ -10760,6 +10760,9 @@ MonoBehaviour:
   collectDistance: 8
   collectEffect: {fileID: 5617135326491278275, guid: eed9ae2b64bcc4c119b9f9cc57e8d502, type: 3}
   door: {fileID: 8282184426917811388}
+  doorMesh: {fileID: 7518373589736035589}
+  particleSystem: {fileID: 6195616277125915146}
+  icon: {fileID: 2230330587122077656}
 --- !u!1 &7927114080435074830
 GameObject:
   m_ObjectHideFlags: 0

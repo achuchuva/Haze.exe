@@ -30,6 +30,7 @@ public class DoorPlacer : MonoBehaviour
     private PortalTeleporter _door = null;
 
     public bool Disabled { get; set; } = false;
+    DoorManager.DoorSettings doorSettings;
 
     // Update is called once per frame
     void Update()
@@ -141,6 +142,8 @@ public class DoorPlacer : MonoBehaviour
 
         Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
         GameObject door = Instantiate(doorPrefab, _currentPlacementPosition, rotation);
+        doorSettings = DoorManager.Instance.GetDoorSettings();
+        door.GetComponent<Door>().SetDoorSettings(doorSettings);
         _door = door.GetComponentInChildren<PortalTeleporter>();
 
         DoorManager.Instance.doorCount -= 1;
@@ -187,6 +190,7 @@ public class DoorPlacer : MonoBehaviour
         }
 
         GameObject secondDoor = Instantiate(doorPrefab, position, rotation);
+        secondDoor.GetComponent<Door>().SetDoorSettings(doorSettings);
         PortalTeleporter _secondDoor = secondDoor.GetComponentInChildren<PortalTeleporter>();
 
         DoorManager.Instance.doorCount -= 1;

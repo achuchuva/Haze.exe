@@ -578,6 +578,7 @@ MonoBehaviour:
   character: {fileID: 5238820401998598406}
   sensitivity: 2
   smoothing: 1.5
+  startingRotation: 180
 --- !u!114 &3503371184025909721
 MonoBehaviour:
   m_ObjectHideFlags: 0
