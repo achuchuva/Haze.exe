@@ -7,6 +7,8 @@ public class FirstPersonMovement : MonoBehaviour
     public GroundCheck groundCheck;
     public float speed = 5;
     public float gravity = -9.81f;
+    public AudioSource walkSound;
+    public AudioSource runSound;
 
     [Header("Running")]
     public bool canRun = true;
@@ -31,6 +33,31 @@ public class FirstPersonMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
+        if (groundCheck.isGrounded && (x != 0 || z != 0))
+        {
+            if (IsRunning)
+            {
+                if (!runSound.isPlaying)
+                {
+                    runSound.Play();
+                }
+                walkSound.Stop();
+            }
+            else
+            {
+                if (!walkSound.isPlaying)
+                {
+                    walkSound.Play();
+                }
+                runSound.Stop();
+            }
+        }
+        else
+        {
+            walkSound.Stop();
+            runSound.Stop();
+        }
 
         Vector3 move = transform.right * x + transform.forward * z;
 

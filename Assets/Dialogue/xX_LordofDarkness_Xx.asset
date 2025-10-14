@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
-  m_Name: Petah
+  m_Name: xX_LordofDarkness_Xx
   m_EditorClassIdentifier: 
-  name: Peter Griffin
+  name: xX_LordofDarkness_Xx
   lines:
-  - Welcome to HAZE.exe! Eternal digital damnation. You must be new here
-  - Check your minimap using M.
-  - Does he know about the D-O-R-E?
+  - "Ugh, the only thing as cooked as being stranded in hell is having to hang around
+    with these mid losers.\r"
+  - Sure, whatever. Go that way. Anywhere that gets you away from me, negative aura
+    bozo.

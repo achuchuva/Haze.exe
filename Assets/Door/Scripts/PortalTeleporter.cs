@@ -6,6 +6,7 @@ public class PortalTeleporter : MonoBehaviour {
 
 	public Transform player;
 	public Transform reciever;
+	public AudioSource teleportSound;
 
 	private bool playerIsOverlapping = false;
 	private float lastTeleportTime = 0f;
@@ -35,6 +36,8 @@ public class PortalTeleporter : MonoBehaviour {
 				positionOffset += reciever.up * 0.5f;
 				positionOffset -= reciever.forward * 0.5f;
 				player.position = reciever.position + positionOffset;
+
+				teleportSound.Play();
 
 				playerIsOverlapping = false;
 

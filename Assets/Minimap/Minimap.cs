@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class Minimap : MonoBehaviour
 {
     public TMP_Text doorCountText;
+    public GameObject minimapPrompt;
     public GameObject camera;
     public GameObject image;
     public GameObject mazeGEO;
@@ -46,6 +47,7 @@ public class Minimap : MonoBehaviour
     {
         _isMinimapActive = true;
 
+        minimapPrompt.SetActive(false);
         camera.SetActive(true);
         image.SetActive(true);
         mazeGEO.SetActive(true);
@@ -66,6 +68,7 @@ public class Minimap : MonoBehaviour
     {
         _isMinimapActive = false;
 
+        minimapPrompt.SetActive(true);
         camera.SetActive(false);
         image.SetActive(false);
         mazeGEO.SetActive(false);

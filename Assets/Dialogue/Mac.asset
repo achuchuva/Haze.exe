@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
+  m_Name: Mac
+  m_EditorClassIdentifier: 
+  name: Mac (not peter griffin)
+  lines:
+  - "Woah, buddy. You good? You probably don't know where you are. I honestly don't
+    either. My best guess is it's some sort of computerized hell meant to imprison
+    us. \r"
+  - "There's no getting outta here unless you've still got all your mental faculties
+    intact. This labrynth eats away at people's minds.\r"
+  - "The maze is nothing but dead ends. You'll need to find some programs to help
+    you make doorways through the walls. They looked like vending machines, last
+    I checked. \r"
+  - "They'll give you the ability to make holes wherever you want in the maze, as
+    long as it isn't obscured by the haze. \r"
+  - "They're a one time use each so use them wisely. Otherwise you'll need to pick
+    up your entrance and put it somewhere else.\r"
+  - Place your entrance wherever you want in front of you, then place your exit on
+    the map. Try to ask around for help with clearing the haze first.
+  - "The haze is this... sort of fuzz that distorts the map. It's how most of us
+    got lost. Only people who've around it long enough know their way through it.\r"
+  - "\rYou should try talking to the people. Most of them kind of lost themselves
+    but they can help clear up your path. \r"
+  - After you've cleared a section of the haze, try placing your exit door there.
+    Do that enough times and you may yet find an escape from this digital damnation.

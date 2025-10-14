@@ -9,6 +9,7 @@ public class DoorPlacer : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private LayerMask placementSurfaceLayerMask;
     [SerializeField] private LayerMask obstacleLayerMask;
+    [SerializeField] private AudioSource placeDoorSound;
 
     [Header("Preview Material")]
     [SerializeField] private Material previewMaterial;
@@ -164,17 +165,20 @@ public class DoorPlacer : MonoBehaviour
         }
 
         position.y = _currentPlacementPosition.y;
-        // Find the rotation that can shoot a the longest raycast distance without hitting an obstacle.
-        Quaternion rotation = Quaternion.Euler(0f, playerCamera.transform.eulerAngles.y, 0f);
-        Vector3 bestDirection = rotation * Vector3.forward;
-        float bestDistance = 0f;
+
+        // Find the rotation that allows for the longest raycast distance without hitting an obstacle.
+        Vector3 bestDirection = Vector3.forward; // Default starting direction
+        float bestDistance = -1f; // Start with -1 to ensure the first valid hit is always chosen
         int rayCount = 16;
+        float maxRayDistance = 100f;
+
         for (int i = 0; i < rayCount; i++)
         {
             float angle = (360f / rayCount) * i;
             Vector3 direction = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
-            RaycastHit hitInfo;
-            if (Physics.Raycast(position + new Vector3(0, 1, 0), direction, out hitInfo, 100f, obstacleLayerMask))
+            Vector3 rayStartPos = position + Vector3.up; 
+            
+            if (Physics.Raycast(rayStartPos, direction, out RaycastHit hitInfo, maxRayDistance, obstacleLayerMask))
             {
                 if (hitInfo.distance > bestDistance)
                 {
@@ -184,12 +188,17 @@ public class DoorPlacer : MonoBehaviour
             }
             else
             {
+                bestDistance = maxRayDistance;
                 bestDirection = direction;
-                break;
+                break; 
             }
         }
 
-        GameObject secondDoor = Instantiate(doorPrefab, position, rotation);
+        Quaternion finalRotation = Quaternion.LookRotation(-bestDirection);
+
+        placeDoorSound.Play();
+
+        GameObject secondDoor = Instantiate(doorPrefab, position, finalRotation);
         secondDoor.GetComponent<Door>().SetDoorSettings(doorSettings);
         PortalTeleporter _secondDoor = secondDoor.GetComponentInChildren<PortalTeleporter>();
 

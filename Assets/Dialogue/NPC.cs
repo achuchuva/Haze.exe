@@ -28,8 +28,6 @@ public class NPC : MonoBehaviour
 
     public void DialogueEnd()
     {
-        isPlayerNearby = true;
-        DialogueManager.Instance.ShowInteractPrompt();
         DialogueManager.Instance.OnDialogueEnd.RemoveListener(DialogueEnd);
 
         foreach (GameObject haze in removedHaze)

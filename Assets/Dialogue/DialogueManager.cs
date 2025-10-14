@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     [Range(0.01f, 0.2f)]
     [Tooltip("Seconds per character when typing out dialogue")]
     public float typeSpeed = 0.05f; // Seconds per character
+    public AudioSource dialogueSound;
 
     public bool DialogueActive { get; private set; }
     public UnityEvent OnDialogueEnd;
@@ -37,6 +38,17 @@ public class DialogueManager : MonoBehaviour
         DialogueActive = false;
     }
 
+    void Update()
+    {
+        if (DialogueActive && isTyping)
+        {
+            if (!dialogueSound.isPlaying)
+            {
+                dialogueSound.Play();
+            }
+        }
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
         // Disable a bunch of stuff
@@ -44,6 +56,7 @@ public class DialogueManager : MonoBehaviour
         FindObjectOfType<DoorPlacer>().ExitPlacementMode();
         FindObjectOfType<Minimap>().Locked = true;
         FindObjectOfType<Minimap>().DisableMinimap();
+        FindObjectOfType<Minimap>().minimapPrompt.SetActive(false);
         FindObjectOfType<FirstPersonMovement>().Disable();
         FindObjectOfType<FirstPersonLook>().Disabled = true;
 
@@ -138,6 +151,7 @@ public class DialogueManager : MonoBehaviour
         // Re-enable all the stuff
         FindObjectOfType<DoorPlacer>().Disabled = false;
         FindObjectOfType<Minimap>().Locked = false;
+        FindObjectOfType<Minimap>().minimapPrompt.SetActive(true);
         FindObjectOfType<FirstPersonMovement>().Enable();
         FindObjectOfType<FirstPersonLook>().Disabled = false;
     }
