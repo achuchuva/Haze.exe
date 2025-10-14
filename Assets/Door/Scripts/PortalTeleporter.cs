@@ -41,6 +41,10 @@ public class PortalTeleporter : MonoBehaviour {
 
 				playerIsOverlapping = false;
 
+				// Disable collect prompt after teleporting through a door
+				GameObject collectPrompt = GameObject.FindObjectOfType<DoorManager>().collectPrompt;
+				collectPrompt.SetActive(false);
+
 				reciever.GetComponent<PortalTeleporter>().lastTeleportTime = Time.time;
 
 				player.GetComponent<FirstPersonMovement>().controller.enabled = true;

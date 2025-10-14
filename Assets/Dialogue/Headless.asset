@@ -18,3 +18,9 @@ MonoBehaviour:
     LIKE MY FFFFFFFFFuuuAAAAAAAreaking head is TOTALLY NOT CHOPPED OFF!
   - WHERE ARE YOU?! ONE METER ABOVE ME BUDDY! HA! TALL JOKE! AGH GOD, I AM IN INCREDIBLE
     PAIN!
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 2
+  minPitch: 0.5
+  maxPitch: 1.14
+  stopAudioSource: 1

@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 171713014}
   m_Layer: 0
   m_Name: Mac
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -635,7 +635,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2074617282}
-  - {fileID: 520538247}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &175949682
@@ -654,8 +653,9 @@ MonoBehaviour:
   dialogueText: {fileID: 687918665}
   nameText: {fileID: 1249757307}
   interactPromptPanel: {fileID: 1421366834}
-  typeSpeed: 0.03
-  dialogueSound: {fileID: 520538248}
+  typeSpeed: 0.02
+  makePredictable: 0
+  dialogueSource: {fileID: 2074617283}
   OnDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 196271250}
   m_Layer: 0
   m_Name: LordOfDarkness3D
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -740,6 +740,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2020049737}
     m_Modifications:
+    - target: {fileID: -950689384250862709, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: doorAmount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 538794841738768720, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 601bb2126741c4c44895785ca682035d, type: 2}
     - target: {fileID: 1381043299881607366, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9
@@ -783,6 +791,10 @@ PrefabInstance:
     - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_Name
       value: Door Machine (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1270,6 +1282,82 @@ Transform:
   - {fileID: 1651131452}
   m_Father: {fileID: 1875226818}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &267284925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267284926}
+  - component: {fileID: 267284928}
+  - component: {fileID: 267284927}
+  m_Layer: 5
+  m_Name: DoorPreview
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &267284926
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267284925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1714626608}
+  m_Father: {fileID: 1631837443}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 15, y: -15}
+  m_SizeDelta: {x: 350, y: 100}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &267284927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267284925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &267284928
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267284925}
+  m_CullTransparentMesh: 1
 --- !u!1 &273685350
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,7 +1371,7 @@ GameObject:
   - component: {fileID: 273685352}
   m_Layer: 0
   m_Name: Bubsy
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1460,7 +1548,7 @@ GameObject:
   - component: {fileID: 297853051}
   m_Layer: 0
   m_Name: Haze
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1600,7 +1688,7 @@ GameObject:
   - component: {fileID: 323496336}
   m_Layer: 0
   m_Name: Haze4
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1751,7 +1839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 00d1604f348084a40a6ea60a5d992178, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0610789a20439224f82f0fd7548364b5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2051,7 +2139,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8619ca5115d336249a1aa19aeb1bbb9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c4f9bec513985f34ca4b1bd76f060d73, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2419,7 +2507,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 65}
-  m_SizeDelta: {x: 350, y: 60}
+  m_SizeDelta: {x: 450, y: 60}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &478904199
 MonoBehaviour:
@@ -2529,7 +2617,7 @@ GameObject:
   - component: {fileID: 488454743}
   m_Layer: 0
   m_Name: Raybobson
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2665,135 +2753,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492622334}
   m_CullTransparentMesh: 1
---- !u!1 &520538246
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 520538247}
-  - component: {fileID: 520538248}
-  m_Layer: 0
-  m_Name: Male Dialogue Sound (Repeat)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &520538247
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520538246}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 175949681}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &520538248
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520538246}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6ba869157e8b4354cb8f04ae0fbf82f8, type: 3}
-  m_Resource: {fileID: 8300000, guid: 6ba869157e8b4354cb8f04ae0fbf82f8, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &522454731
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,7 +2767,7 @@ GameObject:
   - component: {fileID: 522454733}
   m_Layer: 0
   m_Name: Haze4
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3568,7 +3527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3f6b579f17f805847b8c11828990f7d8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37e64d6b71e8e8b4288c94ed5b849428, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -3777,7 +3736,7 @@ GameObject:
   - component: {fileID: 666300297}
   m_Layer: 0
   m_Name: Wubsy3D
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3999,8 +3958,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4321,7 +4280,7 @@ GameObject:
   - component: {fileID: 790682297}
   m_Layer: 0
   m_Name: Haze3 (1)
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4474,8 +4433,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: E
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4507,7 +4466,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 1024
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4752,7 +4711,7 @@ GameObject:
   - component: {fileID: 867572812}
   m_Layer: 0
   m_Name: Headless
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4812,7 +4771,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   removedHaze:
-  - {fileID: 68081590}
+  - {fileID: 556488535}
 --- !u!1 &879403398
 GameObject:
   m_ObjectHideFlags: 0
@@ -5044,7 +5003,7 @@ GameObject:
   - component: {fileID: 934323848}
   m_Layer: 0
   m_Name: Haze3
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5280,7 +5239,7 @@ GameObject:
   - component: {fileID: 983416193}
   m_Layer: 0
   m_Name: Haze5
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5374,6 +5333,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983416191}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &987669352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 987669353}
+  - component: {fileID: 987669355}
+  - component: {fileID: 987669354}
+  m_Layer: 5
+  m_Name: CollectPrompt
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &987669353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987669352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1345223871}
+  m_Father: {fileID: 1631837443}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -15, y: -15}
+  m_SizeDelta: {x: 300, y: 100}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &987669354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987669352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &987669355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987669352}
+  m_CullTransparentMesh: 1
 --- !u!1 &1002748172
 GameObject:
   m_ObjectHideFlags: 0
@@ -5388,7 +5423,7 @@ GameObject:
   - component: {fileID: 1002748174}
   m_Layer: 0
   m_Name: Haze4
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6332,8 +6367,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Q
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: ba8742c63cc1f4057ac8fdb85ce2c631, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6622,6 +6657,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2020049737}
     m_Modifications:
+    - target: {fileID: -950689384250862709, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: doorAmount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 538794841738768720, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f3136781721fc44cdba885e6114e4a5d, type: 2}
     - target: {fileID: 1381043299881607366, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.83
@@ -6912,8 +6955,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7169,7 +7212,7 @@ GameObject:
   - component: {fileID: 1301183621}
   m_Layer: 0
   m_Name: Haze
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7277,7 +7320,7 @@ GameObject:
   - component: {fileID: 1301864949}
   m_Layer: 0
   m_Name: Haze3
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7371,6 +7414,144 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301864947}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1345223870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1345223871}
+  - component: {fileID: 1345223873}
+  - component: {fileID: 1345223872}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1345223871
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345223870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 987669353}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1345223872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345223870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'E to collect
+
+    entry door'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 1
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1345223873
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345223870}
+  m_CullTransparentMesh: 1
 --- !u!1 &1346274258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7507,7 +7688,7 @@ GameObject:
   - component: {fileID: 1367611905}
   m_Layer: 0
   m_Name: Ending
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7561,12 +7742,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ca8ad80814d8d469522454c6526d3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 9c0f174e5ef9248b59ba47e2abebb787, type: 2}
+  dialogue: {fileID: 11400000, guid: 16da0bfb6863046008c90bc0925fdaac, type: 2}
   OnDialogueStart:
     m_PersistentCalls:
       m_Calls: []
-  removedHaze:
-  - {fileID: 1277894448}
+  removedHaze: []
 --- !u!1 &1373947692
 GameObject:
   m_ObjectHideFlags: 0
@@ -7917,6 +8097,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2020049737}
     m_Modifications:
+    - target: {fileID: -950689384250862709, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: doorAmount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 538794841738768720, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: f50af275a80724444ada26fa6a5a7b4e, type: 2}
     - target: {fileID: 1381043299881607366, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
@@ -7960,6 +8148,10 @@ PrefabInstance:
     - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_Name
       value: Door Machine (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8061,7 +8253,7 @@ GameObject:
   - component: {fileID: 1442023499}
   m_Layer: 0
   m_Name: Haze
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8328,8 +8520,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Doors Remaining: 2'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8394,7 +8586,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1489897946
@@ -8419,7 +8611,7 @@ GameObject:
   - component: {fileID: 1498278154}
   m_Layer: 0
   m_Name: Haze5
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8754,7 +8946,7 @@ GameObject:
   - component: {fileID: 1544895544}
   m_Layer: 0
   m_Name: Wash. D
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8859,7 +9051,7 @@ GameObject:
   - component: {fileID: 1556443983}
   m_Layer: 0
   m_Name: Princess Anastasia Von Moya
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9085,7 +9277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 184f4022797f56442b42fb48c8687e9c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80a72864b0fd07f4f875dfe561feaca8, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9160,7 +9352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bbf1b7b45b745924790589a7b7fc2f98, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ae85b790d822ce41a1e1469fff3902d, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9275,6 +9467,8 @@ RectTransform:
   - {fileID: 229731052}
   - {fileID: 1421366835}
   - {fileID: 1384428937}
+  - {fileID: 267284926}
+  - {fileID: 987669353}
   - {fileID: 1538888236}
   - {fileID: 590572563}
   m_Father: {fileID: 0}
@@ -9297,7 +9491,7 @@ GameObject:
   - component: {fileID: 1636209172}
   m_Layer: 0
   m_Name: Glorp
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9424,7 +9618,7 @@ GameObject:
   - component: {fileID: 1662302906}
   m_Layer: 0
   m_Name: Tabbes
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9533,6 +9727,144 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1714626607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714626608}
+  - component: {fileID: 1714626610}
+  - component: {fileID: 1714626609}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1714626608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714626607}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 267284926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1714626609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714626607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Click to place
+
+    Q to cancel'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 40
+  m_fontSizeBase: 40
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1714626610
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714626607}
+  m_CullTransparentMesh: 1
 --- !u!1 &1719207727
 GameObject:
   m_ObjectHideFlags: 0
@@ -9693,10 +10025,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: M
+  m_text: R
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
+  m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9930,6 +10262,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2020049737}
     m_Modifications:
+    - target: {fileID: -950689384250862709, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: doorAmount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 538794841738768720, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 304a811e2b4e44d41bfab5e012bad10c, type: 2}
     - target: {fileID: 1381043299881607366, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33
@@ -9973,6 +10313,10 @@ PrefabInstance:
     - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_Name
       value: Door Machine (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10240,7 +10584,7 @@ GameObject:
   - component: {fileID: 1881990410}
   m_Layer: 0
   m_Name: Haze3
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10348,7 +10692,7 @@ GameObject:
   - component: {fileID: 1885194881}
   m_Layer: 0
   m_Name: Haze5
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10779,6 +11123,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   placeDoorSound: {fileID: 1888293258}
+  previewUI: {fileID: 267284925}
   previewMaterial: {fileID: 2100000, guid: c1d3156b8013141358416cf869148fa4, type: 2}
   validColor: {r: 0.33333334, g: 1, b: 0.5019608, a: 0.39215687}
   invalidColor: {r: 1, g: 0.33333337, b: 0.33880237, a: 0.39215687}
@@ -10798,7 +11143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d9841839549643c9a2daa7684ef0cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorCount: 10
+  doorCount: 0
   receivedDoors: 0
   doorSettings:
   - material: {fileID: 2100000, guid: cecb2299b3f0d4c6caab38a6a1cb40d4, type: 2}
@@ -10826,6 +11171,7 @@ MonoBehaviour:
     particleColor2: {r: 1, g: 0.9648272, b: 0, a: 1}
     iconColor: {r: 1, g: 0.9454185, b: 0, a: 1}
     inUse: 0
+  collectPrompt: {fileID: 987669352}
 --- !u!1 &1958280676
 GameObject:
   m_ObjectHideFlags: 0
@@ -10925,7 +11271,7 @@ GameObject:
   - component: {fileID: 2002021555}
   m_Layer: 0
   m_Name: KCJVRYcN
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11043,7 +11389,7 @@ GameObject:
   - component: {fileID: 2060289546}
   m_Layer: 0
   m_Name: Haze4
-  m_TagString: Wall
+  m_TagString: Haze
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11148,7 +11494,7 @@ GameObject:
   - component: {fileID: 2074617282}
   - component: {fileID: 2074617283}
   m_Layer: 0
-  m_Name: Female Dialogue Sound (Repeat)
+  m_Name: AudioSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11179,8 +11525,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8682f50b8b39280468dc2b1b64fc018d, type: 3}
-  m_Resource: {fileID: 8300000, guid: 8682f50b8b39280468dc2b1b64fc018d, type: 3}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11554,6 +11900,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2020049737}
     m_Modifications:
+    - target: {fileID: -950689384250862709, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: doorAmount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1381043299881607366, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.93
@@ -11597,6 +11947,10 @@ PrefabInstance:
     - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
       propertyPath: m_Name
       value: Door Machine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317284515347694059, guid: 27b0222e452644aa99811ffcce820092, type: 3}
+      propertyPath: m_TagString
+      value: NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

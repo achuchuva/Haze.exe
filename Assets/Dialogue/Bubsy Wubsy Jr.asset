@@ -19,3 +19,9 @@ MonoBehaviour:
     it would be funny to
   - Yeah you'll need to go that way. Not like this god forsaken shithole will indicate
     that to you of its own accord like the fucking ****** **** it is.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 2
+  minPitch: 1.28
+  maxPitch: 1.94
+  stopAudioSource: 1

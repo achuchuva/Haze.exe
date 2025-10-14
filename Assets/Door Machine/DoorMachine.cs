@@ -4,6 +4,7 @@ public class DoorMachine : MonoBehaviour
 {
     public Dialogue fullDialogue;
     public Dialogue emptyDialogue;
+    public int doorAmount = 6;
     public NPC npc;
     bool used = false;
 
@@ -32,7 +33,7 @@ public class DoorMachine : MonoBehaviour
         if (used) return;
         used = true;
         // Give the player dooooors
-        DoorManager.Instance.doorCount += 2;
+        DoorManager.Instance.doorCount += doorAmount;
         if (!DoorManager.Instance.receivedDoors)
         {
             WarningFlash.Instance.FlashWarning("Q", 200);

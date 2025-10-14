@@ -17,3 +17,9 @@ MonoBehaviour:
   - Oh yeah I know all about this place. On another note, did you know that one in
     seven people don't like eating raw meat? Crazy!
   - Hm? The haze? Isn't that the thing that kills halos?
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 3
+  minPitch: 0.38
+  maxPitch: 1.24
+  stopAudioSource: 1

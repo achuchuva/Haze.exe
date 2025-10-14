@@ -21,7 +21,12 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Update()
     {
-        if (Disabled) return;
+        if (Disabled)
+        {
+            walkSound.Stop();
+            runSound.Stop();
+            return;
+        }
 
         if (groundCheck.isGrounded && velocity.y < 0)
         {

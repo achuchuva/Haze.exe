@@ -9,6 +9,7 @@ TagManager:
   - Haze
   - Outside
   - Ground
+  - NPC
   layers:
   - Default
   - TransparentFX

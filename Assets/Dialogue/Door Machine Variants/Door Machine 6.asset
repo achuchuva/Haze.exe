@@ -10,22 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
-  m_Name: Door Machine
+  m_Name: Door Machine 6
   m_EditorClassIdentifier: 
   name: Door Machine
   lines:
-  - OW, FUCK! MY CORPUS CALLOSUM!
-  - Hello, how can I- AGH!
-  - Do you know about the D-O-R-E?
-  - Don't go spending it all in one place.
-  - My lobotomy wasn't scheduled until next Tuesday.
   - Now in 16K quality textures with over 200 million polygons. (Requires 120GB of
     storage space, an SSD, 32GB of ram, an NVIDIA GeForce RTX 3080 graphics card
     and an Intel Core i7-12700 processor).
-  - Geez this is worse than that time I was a door machine trapped in a maze.
-  - Uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh...
-  - ...
-  - "Est\xE1s usando este software de traducci\xF3n de forma incorrecta. Por favor,
-    consulta el manual."
-  - I once knew a guy called the muffin man.
-  - What are we? Some kind of "Haze.exe"?
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 4
+  minPitch: 0.3
+  maxPitch: 0.6
+  stopAudioSource: 1

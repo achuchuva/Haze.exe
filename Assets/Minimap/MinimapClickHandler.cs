@@ -47,9 +47,29 @@ public class MinimapClickHandler : MonoBehaviour, IPointerClickHandler
         if (Physics.Raycast(MapRay, out miniMapHit, Mathf.Infinity))
         {
             Debug.Log("Hit tag: " + miniMapHit.collider.tag);
-            if (miniMapHit.collider.tag != "Ground")
+            if (miniMapHit.collider.tag == "Outside")
             {
-                WarningFlash.Instance.FlashWarning("CAN'T PLACE THERE", 80);
+                WarningFlash.Instance.FlashWarning("OUT OF BOUNDS", 50);
+                return;
+            }
+            if (miniMapHit.collider.tag == "Haze")
+            {
+                WarningFlash.Instance.FlashWarning("ERROR: HAZE", 50);
+                return;
+            }
+            if (miniMapHit.collider.tag == "Wall")
+            {
+                WarningFlash.Instance.FlashWarning("TOO CLOSE TO WALLS", 50);
+                return;
+            }
+            if (miniMapHit.collider.tag == "Door")
+            {
+                WarningFlash.Instance.FlashWarning("TOO CLOSE TO DOOR", 50);
+                return;
+            }
+            if (miniMapHit.collider.tag == "Player" || miniMapHit.collider.tag == "NPC")
+            {
+                WarningFlash.Instance.FlashWarning("TOO CLOSE TO CHARACTER", 50);
                 return;
             }
             minimap.MinimapClick(miniMapHit.point);

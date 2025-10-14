@@ -30,7 +30,7 @@ public class Minimap : MonoBehaviour
 
         if (Locked) return;
 
-        if (Input.GetKeyDown(KeyCode.M))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             if (!_isMinimapActive)
             {
@@ -80,6 +80,7 @@ public class Minimap : MonoBehaviour
 
         DoorPlacer doorPlacer = GameObject.FindObjectOfType<DoorPlacer>();
         doorPlacer.Disabled = false;
+        doorPlacer.CleanupDoors();
     }
 
     void MoveMinimapToPlayer()

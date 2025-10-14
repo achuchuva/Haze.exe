@@ -16,6 +16,7 @@ public class DoorManager : MonoBehaviour
     public int doorCount = 0;
     public bool receivedDoors = false;
     public DoorSettings[] doorSettings;
+    public GameObject collectPrompt;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

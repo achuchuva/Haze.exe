@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 923428858048879275}
   m_Layer: 0
   m_Name: Door Machine
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +239,7 @@ MonoBehaviour:
   OnDialogueStart:
     m_PersistentCalls:
       m_Calls: []
+  removedHaze: []
 --- !u!114 &-950689384250862709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fullDialogue: {fileID: 11400000, guid: 68fe6bec939d04d269fc2120ecba64d4, type: 2}
   emptyDialogue: {fileID: 11400000, guid: 91ebe5050edd041eba3093472918bd39, type: 2}
+  doorAmount: 6
   npc: {fileID: 538794841738768720}
 --- !u!65 &923428858048879275
 BoxCollider:

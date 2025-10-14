@@ -17,3 +17,9 @@ MonoBehaviour:
   - "HAVE YOU COME TO SEE MY WITTY STANDUP ROUTINE??? NO?? \r"
   - FUCK! CANCEL CULTURE STRIKES AGAIN! JUST FUCKING LEAVE IF YOU'RE GONNA BE A WOKE
     SNOWFLAKE!!!
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 4
+  minPitch: 0.5
+  maxPitch: 2.67
+  stopAudioSource: 1

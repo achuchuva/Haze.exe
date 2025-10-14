@@ -17,3 +17,9 @@ MonoBehaviour:
   - "HOW DARE YOU ENTER MY PRESENCE, PLEBIAN! DON'T YOU KNOW I HAVE PHANTOM PAIN\u2122?!"
   - MY DAD'S GONNA BAN YOUR ASS FROM THIS PLANE OF EXISTENCE! EXIT'S THAT WAY IF
     YOU VALUE YOUR MORTAL SOUL, USERPER!
+  dialogueSounds:
+  - {fileID: 8300000, guid: 5823d11fc1d334b0982e7cce069f8480, type: 3}
+  frequencyLevel: 4
+  minPitch: 2.5
+  maxPitch: 3
+  stopAudioSource: 1

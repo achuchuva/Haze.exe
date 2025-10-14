@@ -19,6 +19,7 @@ MonoBehaviour:
     us. \r"
   - "There's no getting outta here unless you've still got all your mental faculties
     intact. This labrynth eats away at people's minds.\r"
+  - You should have a map to help you out. Bring it up by toggling R.
   - "The maze is nothing but dead ends. You'll need to find some programs to help
     you make doorways through the walls. They looked like vending machines, last
     I checked. \r"
@@ -34,3 +35,9 @@ MonoBehaviour:
     but they can help clear up your path. \r"
   - After you've cleared a section of the haze, try placing your exit door there.
     Do that enough times and you may yet find an escape from this digital damnation.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 3
+  minPitch: 0.1
+  maxPitch: 0.7
+  stopAudioSource: 1

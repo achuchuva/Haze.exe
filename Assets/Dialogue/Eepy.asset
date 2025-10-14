@@ -18,3 +18,9 @@ MonoBehaviour:
     mind's arcane sorcery?
   - Bid adiue and fairest blessings. May thou unmask yon deceit veiled beneath ye
     maze.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 5823d11fc1d334b0982e7cce069f8480, type: 3}
+  frequencyLevel: 3
+  minPitch: 1.81
+  maxPitch: 2.34
+  stopAudioSource: 1

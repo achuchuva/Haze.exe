@@ -16,3 +16,9 @@ MonoBehaviour:
   lines:
   - 'ERROR: User already received door.'
   - bro really thought they could get multiple
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 4
+  minPitch: 0.3
+  maxPitch: 0.6
+  stopAudioSource: 1

@@ -19,3 +19,9 @@ MonoBehaviour:
   - Started doing that about... ten... trillion years ago? Hasn't panned out so far.
   - "Oh yeah I remember that spot. Circled it for a good milennia or two before I
     started recognizing the four pixels in the bottom right.\r"
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 4
+  minPitch: 0.94
+  maxPitch: 1.97
+  stopAudioSource: 1

@@ -18,3 +18,9 @@ MonoBehaviour:
     riches in spite of that which I may cater.
   - An escape from tomorrow's grasp on the yestermorrow acts at the behest of thine
     penmanship. Forever more, soldier.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 5823d11fc1d334b0982e7cce069f8480, type: 3}
+  frequencyLevel: 3
+  minPitch: 0.75
+  maxPitch: 1.01
+  stopAudioSource: 1

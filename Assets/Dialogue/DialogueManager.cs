@@ -18,7 +18,10 @@ public class DialogueManager : MonoBehaviour
     [Range(0.01f, 0.2f)]
     [Tooltip("Seconds per character when typing out dialogue")]
     public float typeSpeed = 0.05f; // Seconds per character
-    public AudioSource dialogueSound;
+
+    [Header("Audio")]
+    public bool makePredictable = false; 
+    public AudioSource dialogueSource;
 
     public bool DialogueActive { get; private set; }
     public UnityEvent OnDialogueEnd;
@@ -27,6 +30,7 @@ public class DialogueManager : MonoBehaviour
     private int index;
     private Coroutine typingCoroutine;
     private bool isTyping;
+    private Dialogue currentDialogue;
 
     private void Awake()
     {
@@ -38,19 +42,9 @@ public class DialogueManager : MonoBehaviour
         DialogueActive = false;
     }
 
-    void Update()
-    {
-        if (DialogueActive && isTyping)
-        {
-            if (!dialogueSound.isPlaying)
-            {
-                dialogueSound.Play();
-            }
-        }
-    }
-
     public void StartDialogue(Dialogue dialogue)
     {
+        currentDialogue = dialogue;
         // Disable a bunch of stuff
         FindObjectOfType<DoorPlacer>().Disabled = true;
         FindObjectOfType<DoorPlacer>().ExitPlacementMode();
@@ -124,17 +118,63 @@ public class DialogueManager : MonoBehaviour
             {
                 timer -= typeSpeed;
                 dialogueText.text += line[charIndex];
+                PlayDialogueSound(charIndex, line[charIndex]);
                 charIndex++;
             }
 
             yield return new WaitForFixedUpdate();
         }
 
+        dialogueSource.Stop();
         isTyping = false;
+    }
+
+    private void PlayDialogueSound(int currentDisplayedCharacterCount, char currentChar)
+    {
+        AudioClip[] dialogueSounds = currentDialogue.dialogueSounds;
+        int frequencyLevel = currentDialogue.frequencyLevel;
+        float minPitch = currentDialogue.minPitch;
+        float maxPitch = currentDialogue.maxPitch;
+        bool stopAudioSource = currentDialogue.stopAudioSource;
+
+        if (currentDisplayedCharacterCount % frequencyLevel == 0)
+        {
+            if (stopAudioSource)
+                dialogueSource.Stop();
+
+            AudioClip soundClip = null;
+            if (makePredictable)
+            {
+                int hashCode = currentChar.GetHashCode();
+                int index = hashCode % dialogueSounds.Length;
+                soundClip = dialogueSounds[index];
+
+                int minPitchInt = (int) (minPitch * 100);
+                int maxPitchInt = (int) (maxPitch * 100);
+                int pitchRangeInt = maxPitchInt - minPitchInt;
+
+                if (pitchRangeInt != 0)
+                {
+                    int predictablePitchInt = (hashCode % pitchRangeInt) + minPitchInt;
+                    dialogueSource.pitch = predictablePitchInt / 100f;
+                }
+                else
+                {
+                    dialogueSource.pitch = minPitch;
+                }
+            }
+            else
+            {
+                soundClip = dialogueSounds[Random.Range(0, dialogueSounds.Length)];
+                dialogueSource.pitch = Random.Range(minPitch, maxPitch);
+            }
+            dialogueSource.PlayOneShot(soundClip);
+        }
     }
 
     private void FinishTyping()
     {
+        dialogueSource.Stop();
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 

@@ -18,3 +18,9 @@ MonoBehaviour:
     than a nice ambient space to hear your own thoughts judge you.
   - Why I'd be happy to lend a hand stranger. After all, helping your own hallucinations
     only makes sense.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 3
+  minPitch: 1.14
+  maxPitch: 1.74
+  stopAudioSource: 1

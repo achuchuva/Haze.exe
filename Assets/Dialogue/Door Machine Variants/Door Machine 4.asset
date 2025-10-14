@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
+  m_Name: Door Machine 4
+  m_EditorClassIdentifier: 
+  name: Door Machine
+  lines:
+  - My lobotomy wasn't scheduled until next Tuesday.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 4
+  minPitch: 0.3
+  maxPitch: 0.6
+  stopAudioSource: 1

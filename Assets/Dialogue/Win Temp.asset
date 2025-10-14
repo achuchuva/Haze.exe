@@ -15,3 +15,9 @@ MonoBehaviour:
   name: Developer
   lines:
   - You win lol I'll finish the game later. Hit quit, go outside, touch grass.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 9c1584084944a40cea11aa47b3f185de, type: 3}
+  frequencyLevel: 2
+  minPitch: 0.5
+  maxPitch: 1.5
+  stopAudioSource: 1

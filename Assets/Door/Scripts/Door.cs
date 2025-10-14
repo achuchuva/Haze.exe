@@ -17,6 +17,7 @@ public class Door : MonoBehaviour
     public Image icon;
 
     DoorManager.DoorSettings doorSettings;
+    GameObject collectPrompt;
 
     public Door Other { get; set; } = null;
 
@@ -25,6 +26,7 @@ public class Door : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform.root;
+        collectPrompt = GameObject.FindObjectOfType<DoorManager>().collectPrompt;
     }
 
     void Update()
@@ -46,8 +48,26 @@ public class Door : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player" && Other)
+        {
+            collectPrompt.SetActive(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player" && Other)
+        {
+            collectPrompt.SetActive(false);
+        }
+    }
+
     public void CollectDoor()
     {
+        collectPrompt.SetActive(false);
+
         // Shoot a ray from the player to the door to see if there is a clear line of sight.
         RaycastHit hit;
         Vector3 direction = (door.position - player.position).normalized;

@@ -17,3 +17,9 @@ MonoBehaviour:
   - Hey, man. Be careful around here. Bumped into some chick and she called my fit
     "mid". Never been so distraught in my life.
   - Yeah, she was two blocks down. Be careful, bro.
+  dialogueSounds:
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 2
+  minPitch: 0.22
+  maxPitch: 1.57
+  stopAudioSource: 1
