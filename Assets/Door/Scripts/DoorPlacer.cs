@@ -304,6 +304,7 @@ public class DoorPlacer : MonoBehaviour
             Destroy(effect, 3f);
             Destroy(_door.transform.root.gameObject);
             _door = null;
+            DoorManager.Instance.doorCount += 1;
         }
         ExitPlacementMode();
         minimap.OnMinimapClick.RemoveListener(PlaceSecondDoor);

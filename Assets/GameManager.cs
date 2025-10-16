@@ -25,7 +25,7 @@ public class Gamemanager : MonoBehaviour
     {
         if (!displayedWASD)
         {
-            WarningFlash.Instance.FlashWarning("WASD", 100);
+            WarningFlash.Instance.FlashWarningImage();
             displayedWASD = true;
         }
     }

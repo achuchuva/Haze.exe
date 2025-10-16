@@ -20,6 +20,8 @@ public class Door : MonoBehaviour
     GameObject collectPrompt;
 
     public Door Other { get; set; } = null;
+    public bool Close { get; set; } = false;
+    public bool Far { get; set; } = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -46,20 +48,17 @@ public class Door : MonoBehaviour
         {
             CollectDoor();
         }
-    }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player" && Other)
+        if (distance < openDistance && !Close && Other)
         {
+            Far = false;
+            Close = true;
             collectPrompt.SetActive(true);
         }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player" && Other)
+        else if (distance >= openDistance && !Far)
         {
+            Far = true;
+            Close = false;
             collectPrompt.SetActive(false);
         }
     }
