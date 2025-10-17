@@ -7,6 +7,7 @@ public class DoorMachine : MonoBehaviour
     public int doorAmount = 6;
     public NPC npc;
     bool used = false;
+    public AudioSource dispenseDoor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +33,7 @@ public class DoorMachine : MonoBehaviour
         npc.dialogue = emptyDialogue;
         if (used) return;
         used = true;
+        dispenseDoor.Play();
         // Give the player dooooors
         DoorManager.Instance.doorCount += doorAmount;
         if (!DoorManager.Instance.receivedDoors)
