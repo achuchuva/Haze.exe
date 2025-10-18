@@ -7,6 +7,26 @@ public class LevelLoader : MonoBehaviour
     public static LevelLoader Instance;
     public Animator transition;
     public float transitionTime = 1f;
+    public float mazeTransitionTime = 2f;
+
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            // Unlock the cursor in the menu scene
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+    }
 
     // Update is called once per frame
     void Update()
@@ -19,10 +39,27 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(Load(levelName));
     }
 
+    public void LoadNextMazeLevel(string levelName)
+    {
+        StartCoroutine(LevelLoad(levelName));
+    }
+
     public void Quit()
     {
         Debug.Log("Quit");
         Application.Quit();
+    }
+
+    IEnumerator LevelLoad(string name)
+    {
+        // Play animation
+        transition.SetTrigger("WhiteStart");
+
+        // Wait
+        yield return new WaitForSeconds(mazeTransitionTime);
+
+        // Load scene
+        SceneManager.LoadScene(name);
     }
 
     IEnumerator Load(string name)
@@ -35,5 +72,5 @@ public class LevelLoader : MonoBehaviour
 
         // Load scene
         SceneManager.LoadScene(name);
-    } 
+    }
 }

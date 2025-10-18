@@ -32,12 +32,8 @@ public class DoorPlacer : MonoBehaviour
     private PortalTeleporter _door = null;
 
     public bool Disabled { get; set; } = false;
+    public bool FirstDoorPlaced => _door != null;
     DoorManager.DoorSettings doorSettings;
-
-    void Start()
-    {
-        minimap.OnMinimapClick.AddListener(PlaceDoorFromMinimap);
-    }
 
     // Update is called once per frame
     void Update()
@@ -160,62 +156,6 @@ public class DoorPlacer : MonoBehaviour
 
         minimap.ActivateMinimap();
         minimap.OnMinimapClick.AddListener(PlaceSecondDoor);
-        minimap.OnMinimapClick.RemoveListener(PlaceDoorFromMinimap);
-    }
-
-    public void PlaceDoorFromMinimap(Vector3 position)
-    {
-        if (DoorManager.Instance.doorCount < 1)
-        {
-            WarningFlash.Instance.FlashWarning("NO DOORS", 80);
-            return;
-        }
-
-        if (Physics.CheckSphere(position + new Vector3(0, 1, 0), 1.25f, obstacleLayerMask))
-        {
-            WarningFlash.Instance.FlashWarning("TOO CLOSE TO WALLS", 50);
-            return;
-        }
-
-        Vector3 bestDirection = Vector3.forward; // Default starting direction
-        float bestDistance = -1f; // Start with -1 to ensure the first valid hit is always chosen
-        int rayCount = 16;
-        float maxRayDistance = 100f;
-
-        for (int i = 0; i < rayCount; i++)
-        {
-            float angle = (360f / rayCount) * i;
-            Vector3 direction = Quaternion.Euler(0f, angle, 0f) * Vector3.forward;
-            Vector3 rayStartPos = position + Vector3.up; 
-            
-            if (Physics.Raycast(rayStartPos, direction, out RaycastHit hitInfo, maxRayDistance, obstacleLayerMask))
-            {
-                if (hitInfo.distance > bestDistance)
-                {
-                    bestDistance = hitInfo.distance;
-                    bestDirection = direction;
-                }
-            }
-            else
-            {
-                bestDistance = maxRayDistance;
-                bestDirection = direction;
-                break; 
-            }
-        }
-
-        Quaternion finalRotation = Quaternion.LookRotation(-bestDirection);
-
-        GameObject door = Instantiate(doorPrefab, position, finalRotation);
-        doorSettings = DoorManager.Instance.GetDoorSettings();
-        door.GetComponent<Door>().SetDoorSettings(doorSettings);
-        _door = door.GetComponentInChildren<PortalTeleporter>();
-
-        DoorManager.Instance.doorCount -= 1;
-        placeDoorSound.Play();
-
-        minimap.OnMinimapClick.AddListener(PlaceSecondDoor);
-        minimap.OnMinimapClick.RemoveListener(PlaceDoorFromMinimap);
     }
 
     void PlaceSecondDoor(Vector3 position)
@@ -275,7 +215,6 @@ public class DoorPlacer : MonoBehaviour
         _door = null;
 
         minimap.OnMinimapClick.RemoveListener(PlaceSecondDoor);
-        minimap.OnMinimapClick.AddListener(PlaceDoorFromMinimap);
     }
 
     void EnterPlacementMode()
@@ -308,6 +247,5 @@ public class DoorPlacer : MonoBehaviour
         }
         ExitPlacementMode();
         minimap.OnMinimapClick.RemoveListener(PlaceSecondDoor);
-        minimap.OnMinimapClick.AddListener(PlaceDoorFromMinimap);
     }
 }

@@ -1,0 +1,615 @@
+fileFormatVersion: 2
+guid: bd44bbc773b124e2d991c99a08c1d283
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a74bf032fbdb4bc9b4955c25416dc4a
+      internalID: 1736631719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e312ca1ac0d164ccc84d02d3db3c623e
+      internalID: 35048811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7b5e333593446a4acec4884f74e88c
+      internalID: 576072664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d4f75e4677f4763b25e67449572492
+      internalID: 1593403933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa1164470c834bb684630a25f0482fd
+      internalID: -440113285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810128794022a4aa78a01899824f5690
+      internalID: -349944409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 1584
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0dff6b45c6fe4b9aaa6fb183519114d
+      internalID: -631999184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf11f2b959f457195a2eb6f7c4858e
+      internalID: 995782824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562ba9493cb9c4cfc8d9be0cab4ad1c5
+      internalID: 653482820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e38db85c85b5b4e0291f0c83f2adc553
+      internalID: 462619467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411294614aca64ef5a306987a4519d0f
+      internalID: 1639512075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf4fb57655214a2095d3413f8420f7c
+      internalID: 2080038622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4689581abef14918ae0b31300cbb826
+      internalID: 1634736880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 792
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b30ec4c177c497cbe7194f640b32b1
+      internalID: -713857588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc60a2e9e30054af58a0e50bb4f1a850
+      internalID: 330190941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081a7ad3a71a84e93ba7997aa078d63e
+      internalID: 1590061959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e219136cb415b4495b7090198abb26a6
+      internalID: -141493132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d19d5b8688654786a1c7e88b2e7dc7a
+      internalID: -1289467724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b312dbfc4cd2246f2bf24ad2b9d757dd
+      internalID: -2016920078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea3ab536b0f240ab989ab0ecd690d75
+      internalID: 384737757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: xX_LordofDarkness_Xx_Idle_Spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 0
+        width: 1408
+        height: 792
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6ab0928989574da59596139039c04db
+      internalID: 635169147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c969c23d542b34c70a940fe2ff580d0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1408.0,"y":792.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_0: 1736631719
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_1: 35048811
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_10: 1639512075
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_11: 2080038622
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_12: 1634736880
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_13: -713857588
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_14: 330190941
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_15: 1590061959
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_16: -141493132
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_17: -1289467724
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_18: -2016920078
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_19: 384737757
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_2: 576072664
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_20: 635169147
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_3: 1593403933
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_4: -440113285
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_5: -349944409
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_6: -631999184
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_7: 995782824
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_8: 653482820
+      xX_LordofDarkness_Xx_Idle_Spritesheet 1_9: 462619467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,27 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Mac (not peter griffin)
   lines:
-  - "Woah, buddy. You good? You probably don't know where you are. I honestly don't
-    either. My best guess is it's some sort of computerized hell meant to imprison
-    us. \r"
-  - "There's no getting outta here unless you've still got all your mental faculties
-    intact. This labrynth eats away at people's minds.\r"
-  - You should have a map to help you out. Bring it up by toggling R.
-  - "The maze is nothing but dead ends. You'll need to find some programs to help
-    you make doorways through the walls. They looked like vending machines, last
-    I checked. \r"
-  - "They'll give you the ability to make holes wherever you want in the maze, as
-    long as it isn't obscured by the haze. \r"
-  - "They're a one time use each so use them wisely. Otherwise you'll need to pick
-    up your entrance and put it somewhere else.\r"
-  - Place your entrance wherever you want in front of you, then place your exit on
-    the map. Try to ask around for help with clearing the haze first.
-  - "The haze is this... sort of fuzz that distorts the map. It's how most of us
-    got lost. Only people who've around it long enough know their way through it.\r"
-  - "\rYou should try talking to the people. Most of them kind of lost themselves
-    but they can help clear up your path. \r"
-  - After you've cleared a section of the haze, try placing your exit door there.
-    Do that enough times and you may yet find an escape from this digital damnation.
+  - "Hey, you ok? Take it easy, you've just gotten yourself trapped in the haze.
+    There's no hope of getting out of here by yourself. All the hallways eventually
+    lead to dead ends.\r"
+  - The only way you can get through them is by making a doorway. Find door machines
+    scattered across the maze. You can place down your entrance in front of you and
+    choose where your exit will go on your map.
+  - Your map will be obscured by the haze. Find other people to talk to. They may
+    not be all there anymore, but they're familiar with where they've been. They
+    can clear your path.
+  - You best start finding a way out before you end up lost like the rest.
   dialogueSounds:
   - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
   frequencyLevel: 3

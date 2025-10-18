@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Eepy
   lines:
-  - Oh noble traveller, whither art thou's soul, stranded in yon labyrnth of thine
+  - Oh noble traveller, whither art thou's soul, stranded in yon labyrinth of thine
     mind's arcane sorcery?
-  - Bid adiue and fairest blessings. May thou unmask yon deceit veiled beneath ye
+  - Bid adieu and fairest blessings. May thou unmask yon deceit veiled beneath ye
     maze.
   dialogueSounds:
   - {fileID: 8300000, guid: 5823d11fc1d334b0982e7cce069f8480, type: 3}

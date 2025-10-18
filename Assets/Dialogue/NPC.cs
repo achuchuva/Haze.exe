@@ -7,6 +7,7 @@ public class NPC : MonoBehaviour
     private bool isPlayerNearby;
     public UnityEvent OnDialogueStart;
     public GameObject[] removedHaze;
+    private bool hazeRemoved = false;
 
     void Update()
     {
@@ -34,6 +35,12 @@ public class NPC : MonoBehaviour
         foreach (GameObject haze in removedHaze)
         {
             haze.SetActive(false);
+        }
+
+        if (removedHaze.Length > 0 && !hazeRemoved)
+        {
+            hazeRemoved = true;
+            WarningFlash.Instance.FlashWarning("HAZE CLEARED", 70);
         }
     }
 

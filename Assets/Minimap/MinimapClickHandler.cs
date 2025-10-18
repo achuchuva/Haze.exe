@@ -13,6 +13,11 @@ public class MinimapClickHandler : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (!FindObjectOfType<DoorPlacer>().FirstDoorPlaced)
+        {
+            return;
+        }
+
         Vector2 cursor = new Vector2(0, 0);
 
         if (RectTransformUtility.ScreenPointToLocalPointInRectangle(GetComponent<RawImage>().rectTransform,
