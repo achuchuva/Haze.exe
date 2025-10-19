@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
   m_Name: Mac
   m_EditorClassIdentifier: 
-  name: Mac (not peter griffin)
+  name: Mac
   lines:
   - "Hey, you ok? Take it easy, you've just gotten yourself trapped in the haze.
     There's no hope of getting out of here by yourself. All the hallways eventually

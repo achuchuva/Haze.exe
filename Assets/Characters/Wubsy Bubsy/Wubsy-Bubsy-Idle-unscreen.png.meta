@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5ad597f614dfe4764bcc46680300df0c
+guid: 32597120446d34afd82b0b31a651b934
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_0
+      name: Wubsy-Bubsy-Idle-unscreen (1)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +125,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c095f20f54764f119a852869e2007e8
-      internalID: -877253003
+      spriteID: 72a9ccec8804a4eb18f6d95c8feb4934
+      internalID: 1195420838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_1
+      name: Wubsy-Bubsy-Idle-unscreen (1)_1
       rect:
         serializedVersion: 2
         x: 640
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e42ec37daa9242fd890e9970a62ced7
-      internalID: -72310116
+      spriteID: c7a2d83f57ee14d7ba0729264dae47ea
+      internalID: -1922033246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_2
+      name: Wubsy-Bubsy-Idle-unscreen (1)_2
       rect:
         serializedVersion: 2
         x: 1280
@@ -169,14 +169,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38c0caa5daea34fd7b4bd5eb9ced7f26
-      internalID: 1671435640
+      spriteID: cf7796f3ffdc441a49645cbed3f0d5cf
+      internalID: -451843302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_3
+      name: Wubsy-Bubsy-Idle-unscreen (1)_3
       rect:
         serializedVersion: 2
         x: 1920
@@ -191,14 +191,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22894b65e569e4711930064487d69f75
-      internalID: 1555511993
+      spriteID: 1f11e477b489e4ea695722d0769b68f1
+      internalID: 605261999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_4
+      name: Wubsy-Bubsy-Idle-unscreen (1)_4
       rect:
         serializedVersion: 2
         x: 2560
@@ -213,14 +213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 717ec50734c8849d3852ff850fc281b9
-      internalID: 723989695
+      spriteID: e21fdc189e3a047cea14a3653219d3cd
+      internalID: 945585242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_5
+      name: Wubsy-Bubsy-Idle-unscreen (1)_5
       rect:
         serializedVersion: 2
         x: 3200
@@ -235,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b207968533c53416cb979cf9246e19c1
-      internalID: 738247762
+      spriteID: bcdf2fcddab3f46d6a59f50a4e10a20e
+      internalID: -1702457016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_6
+      name: Wubsy-Bubsy-Idle-unscreen (1)_6
       rect:
         serializedVersion: 2
         x: 3840
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3191b3d1bbc73476abe8f9c6d9976363
-      internalID: 445298995
+      spriteID: 9ff2817976a104ad7b1f69cc3433dc3f
+      internalID: -432552758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_7
+      name: Wubsy-Bubsy-Idle-unscreen (1)_7
       rect:
         serializedVersion: 2
         x: 0
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18d89f2fdfa33475c8ab73c4b41f6503
-      internalID: -1795343929
+      spriteID: a5210483b9ccf4a729a41701fe54b56f
+      internalID: 1474998868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_8
+      name: Wubsy-Bubsy-Idle-unscreen (1)_8
       rect:
         serializedVersion: 2
         x: 640
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 636e91768444f429382114aa6104806e
-      internalID: -1064483761
+      spriteID: 934aa917f27d8496ea8e340d6eb1c066
+      internalID: -1929824358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_9
+      name: Wubsy-Bubsy-Idle-unscreen (1)_9
       rect:
         serializedVersion: 2
         x: 1280
@@ -323,14 +323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 908369407e2ff4bea86e97d97264f0f4
-      internalID: 845050567
+      spriteID: f545ec922b5644f729aaeb720a480d45
+      internalID: 1098949715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_10
+      name: Wubsy-Bubsy-Idle-unscreen (1)_10
       rect:
         serializedVersion: 2
         x: 1920
@@ -345,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 132c3db72631745c5a3a2a68e00f2fca
-      internalID: 1517948592
+      spriteID: 3216fefe276924f4785ea67449d11900
+      internalID: -422619734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_11
+      name: Wubsy-Bubsy-Idle-unscreen (1)_11
       rect:
         serializedVersion: 2
         x: 2560
@@ -367,14 +367,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d9493d7dd24941e0a949ec06a614cf7
-      internalID: 931898974
+      spriteID: 8fc9de560df5844d59b92d5c0bba317c
+      internalID: -263586775
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_12
+      name: Wubsy-Bubsy-Idle-unscreen (1)_12
       rect:
         serializedVersion: 2
         x: 3200
@@ -389,14 +389,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ce351eadecda4a028af7a730b54da0c
-      internalID: 1690673238
+      spriteID: 03fb2d784b58545c3a3655eadff7842c
+      internalID: -496261866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_13
+      name: Wubsy-Bubsy-Idle-unscreen (1)_13
       rect:
         serializedVersion: 2
         x: 3840
@@ -411,14 +411,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0540eda5a5dd4545b5dc90683b45d01
-      internalID: 1586201314
+      spriteID: 6f2e87404e8654a51b9038ecc9fa37b9
+      internalID: -1684132325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_14
+      name: Wubsy-Bubsy-Idle-unscreen (1)_14
       rect:
         serializedVersion: 2
         x: 0
@@ -433,14 +433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a23f1cbc33a2349c5b101d11c7a54161
-      internalID: -549449036
+      spriteID: b2143d97776ab4636b7740ea87898b46
+      internalID: 1235608718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_15
+      name: Wubsy-Bubsy-Idle-unscreen (1)_15
       rect:
         serializedVersion: 2
         x: 640
@@ -455,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74a4155b6fb614271aa0da3fea885b80
-      internalID: 1278180006
+      spriteID: 9b5e51c3e9fbd435f9543be15c5c88fb
+      internalID: 1660040549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_16
+      name: Wubsy-Bubsy-Idle-unscreen (1)_16
       rect:
         serializedVersion: 2
         x: 1280
@@ -477,14 +477,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96abbdba5bff941a686a0e0c947488e2
-      internalID: -1450035097
+      spriteID: 83bcd092a63ff4510b8ff2673934f9f8
+      internalID: -951328287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_17
+      name: Wubsy-Bubsy-Idle-unscreen (1)_17
       rect:
         serializedVersion: 2
         x: 1920
@@ -499,14 +499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f40da9ce982784000899eff0b023b387
-      internalID: 1148492561
+      spriteID: 2efa9d62cb5eb4fffb7f6ef4db39d082
+      internalID: -239611456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_18
+      name: Wubsy-Bubsy-Idle-unscreen (1)_18
       rect:
         serializedVersion: 2
         x: 2560
@@ -521,14 +521,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bc984fc3bcba40eda82de62d5f36172
-      internalID: -2089590137
+      spriteID: 1c6e787137e2c4d3e9d5e5462032342e
+      internalID: 1972828250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_19
+      name: Wubsy-Bubsy-Idle-unscreen (1)_19
       rect:
         serializedVersion: 2
         x: 3200
@@ -543,14 +543,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d48ee56685024b5d8f30421e08ad508
-      internalID: -207837378
+      spriteID: 130ae761d546d40cc876e188c4604595
+      internalID: 1832431856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_20
+      name: Wubsy-Bubsy-Idle-unscreen (1)_20
       rect:
         serializedVersion: 2
         x: 3840
@@ -565,14 +565,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0104d8004ea874ab595e5f53a53fefbe
-      internalID: -362566233
+      spriteID: d6af61e74bf5049358cd0f700d584250
+      internalID: -534202564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_21
+      name: Wubsy-Bubsy-Idle-unscreen (1)_21
       rect:
         serializedVersion: 2
         x: 0
@@ -587,14 +587,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8285a11aa6ec46b88878e2c61a11c72
-      internalID: 1525750274
+      spriteID: 80166b8654df448eab513897d3d7ce20
+      internalID: 1441649514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_22
+      name: Wubsy-Bubsy-Idle-unscreen (1)_22
       rect:
         serializedVersion: 2
         x: 640
@@ -609,14 +609,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08bdae43f2d2b4fc18a995d60778bc46
-      internalID: -706961398
+      spriteID: daa54ead29b6c44a2ba5635f4e41ba7a
+      internalID: -1919230163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_23
+      name: Wubsy-Bubsy-Idle-unscreen (1)_23
       rect:
         serializedVersion: 2
         x: 1280
@@ -631,14 +631,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd23b052bcebf44caa4651aaf7fc720e
-      internalID: -241126039
+      spriteID: 9401ba88c83cf472fa7ed4b447e297a1
+      internalID: -1205670986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_24
+      name: Wubsy-Bubsy-Idle-unscreen (1)_24
       rect:
         serializedVersion: 2
         x: 1920
@@ -653,14 +653,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2570368e91fce4a5e8f16a3e2e50a876
-      internalID: -1325603417
+      spriteID: 028b1024ab3fc4c62b5f7d8f43cafb2a
+      internalID: 1327698516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_25
+      name: Wubsy-Bubsy-Idle-unscreen (1)_25
       rect:
         serializedVersion: 2
         x: 2560
@@ -675,14 +675,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 327654eb070be425799cebf126ea6e3c
-      internalID: -1912051122
+      spriteID: c856614a14d014a1a8ff737c77aec14f
+      internalID: -552451104
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_26
+      name: Wubsy-Bubsy-Idle-unscreen (1)_26
       rect:
         serializedVersion: 2
         x: 3200
@@ -697,14 +697,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b591da8ff62a4366b1e50b905179da0
-      internalID: 852843716
+      spriteID: 4cb5fce368cd240ea889868d1fee331c
+      internalID: -1314909263
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_27
+      name: Wubsy-Bubsy-Idle-unscreen (1)_27
       rect:
         serializedVersion: 2
         x: 3840
@@ -719,14 +719,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6dae286a76684e9dad6b8b1e5c844b6
-      internalID: -1423519278
+      spriteID: 3dfd1d49cb18d48f485e0a8f379d7219
+      internalID: -1010396804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_28
+      name: Wubsy-Bubsy-Idle-unscreen (1)_28
       rect:
         serializedVersion: 2
         x: 0
@@ -741,14 +741,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 362d959cb403149a19e9c2c89a999131
-      internalID: 1757675328
+      spriteID: 4ce9c5b75ffee41348425dfb45f776b6
+      internalID: -1026349151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_29
+      name: Wubsy-Bubsy-Idle-unscreen (1)_29
       rect:
         serializedVersion: 2
         x: 640
@@ -763,14 +763,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df6fada3df4d4b75a8528fa9fc96e40
-      internalID: -1729623303
+      spriteID: 4f8fcfe38c3a4400f9a9ebbbd3648c8a
+      internalID: -753636998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_30
+      name: Wubsy-Bubsy-Idle-unscreen (1)_30
       rect:
         serializedVersion: 2
         x: 1280
@@ -785,14 +785,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5589a0c401e0d403c92d88487b523d70
-      internalID: -854302806
+      spriteID: d72f2bfb5d2c742b993a7ce4cfa57137
+      internalID: 345588029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_31
+      name: Wubsy-Bubsy-Idle-unscreen (1)_31
       rect:
         serializedVersion: 2
         x: 1920
@@ -807,14 +807,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08f952ef2933149b5a82ecd3a3e6980c
-      internalID: 1626744249
+      spriteID: 62e296bd5ca30436d93c1fe9073fd2e8
+      internalID: -1363461126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_32
+      name: Wubsy-Bubsy-Idle-unscreen (1)_32
       rect:
         serializedVersion: 2
         x: 2560
@@ -829,14 +829,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4290334ae9c3e4ee5aa973f58e1bd6f9
-      internalID: -328260013
+      spriteID: feb138b5ebc19453ab6ab128ad32103a
+      internalID: -910598851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_33
+      name: Wubsy-Bubsy-Idle-unscreen (1)_33
       rect:
         serializedVersion: 2
         x: 3200
@@ -851,14 +851,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458617e7a570b4885a75c7a40318ec56
-      internalID: -1682638985
+      spriteID: 92f34952507b745d9be3517a2bdde106
+      internalID: -2091420953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wubsy-Bubsy-Idle-unscreen_34
+      name: Wubsy-Bubsy-Idle-unscreen (1)_34
       rect:
         serializedVersion: 2
         x: 3840
@@ -873,8 +873,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e2f4216f2324df2ba0a98d9a6b2b35
-      internalID: 2111245152
+      spriteID: c277dfc1bc3084e829d20bc6825a0f47
+      internalID: 305712749
       vertices: []
       indices: 
       edges: []
@@ -883,7 +883,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: deb489eb96c834f7a8d762d2c7ccfeab
+    spriteID: b633fd02870b64de4b01c284f3a0015f
     internalID: 0
     vertices: []
     indices: 
@@ -895,41 +895,41 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":640.0,"y":360.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Wubsy-Bubsy-Idle-unscreen_0: -877253003
-      Wubsy-Bubsy-Idle-unscreen_1: -72310116
-      Wubsy-Bubsy-Idle-unscreen_10: 1517948592
-      Wubsy-Bubsy-Idle-unscreen_11: 931898974
-      Wubsy-Bubsy-Idle-unscreen_12: 1690673238
-      Wubsy-Bubsy-Idle-unscreen_13: 1586201314
-      Wubsy-Bubsy-Idle-unscreen_14: -549449036
-      Wubsy-Bubsy-Idle-unscreen_15: 1278180006
-      Wubsy-Bubsy-Idle-unscreen_16: -1450035097
-      Wubsy-Bubsy-Idle-unscreen_17: 1148492561
-      Wubsy-Bubsy-Idle-unscreen_18: -2089590137
-      Wubsy-Bubsy-Idle-unscreen_19: -207837378
-      Wubsy-Bubsy-Idle-unscreen_2: 1671435640
-      Wubsy-Bubsy-Idle-unscreen_20: -362566233
-      Wubsy-Bubsy-Idle-unscreen_21: 1525750274
-      Wubsy-Bubsy-Idle-unscreen_22: -706961398
-      Wubsy-Bubsy-Idle-unscreen_23: -241126039
-      Wubsy-Bubsy-Idle-unscreen_24: -1325603417
-      Wubsy-Bubsy-Idle-unscreen_25: -1912051122
-      Wubsy-Bubsy-Idle-unscreen_26: 852843716
-      Wubsy-Bubsy-Idle-unscreen_27: -1423519278
-      Wubsy-Bubsy-Idle-unscreen_28: 1757675328
-      Wubsy-Bubsy-Idle-unscreen_29: -1729623303
-      Wubsy-Bubsy-Idle-unscreen_3: 1555511993
-      Wubsy-Bubsy-Idle-unscreen_30: -854302806
-      Wubsy-Bubsy-Idle-unscreen_31: 1626744249
-      Wubsy-Bubsy-Idle-unscreen_32: -328260013
-      Wubsy-Bubsy-Idle-unscreen_33: -1682638985
-      Wubsy-Bubsy-Idle-unscreen_34: 2111245152
-      Wubsy-Bubsy-Idle-unscreen_4: 723989695
-      Wubsy-Bubsy-Idle-unscreen_5: 738247762
-      Wubsy-Bubsy-Idle-unscreen_6: 445298995
-      Wubsy-Bubsy-Idle-unscreen_7: -1795343929
-      Wubsy-Bubsy-Idle-unscreen_8: -1064483761
-      Wubsy-Bubsy-Idle-unscreen_9: 845050567
+      Wubsy-Bubsy-Idle-unscreen (1)_0: 1195420838
+      Wubsy-Bubsy-Idle-unscreen (1)_1: -1922033246
+      Wubsy-Bubsy-Idle-unscreen (1)_10: -422619734
+      Wubsy-Bubsy-Idle-unscreen (1)_11: -263586775
+      Wubsy-Bubsy-Idle-unscreen (1)_12: -496261866
+      Wubsy-Bubsy-Idle-unscreen (1)_13: -1684132325
+      Wubsy-Bubsy-Idle-unscreen (1)_14: 1235608718
+      Wubsy-Bubsy-Idle-unscreen (1)_15: 1660040549
+      Wubsy-Bubsy-Idle-unscreen (1)_16: -951328287
+      Wubsy-Bubsy-Idle-unscreen (1)_17: -239611456
+      Wubsy-Bubsy-Idle-unscreen (1)_18: 1972828250
+      Wubsy-Bubsy-Idle-unscreen (1)_19: 1832431856
+      Wubsy-Bubsy-Idle-unscreen (1)_2: -451843302
+      Wubsy-Bubsy-Idle-unscreen (1)_20: -534202564
+      Wubsy-Bubsy-Idle-unscreen (1)_21: 1441649514
+      Wubsy-Bubsy-Idle-unscreen (1)_22: -1919230163
+      Wubsy-Bubsy-Idle-unscreen (1)_23: -1205670986
+      Wubsy-Bubsy-Idle-unscreen (1)_24: 1327698516
+      Wubsy-Bubsy-Idle-unscreen (1)_25: -552451104
+      Wubsy-Bubsy-Idle-unscreen (1)_26: -1314909263
+      Wubsy-Bubsy-Idle-unscreen (1)_27: -1010396804
+      Wubsy-Bubsy-Idle-unscreen (1)_28: -1026349151
+      Wubsy-Bubsy-Idle-unscreen (1)_29: -753636998
+      Wubsy-Bubsy-Idle-unscreen (1)_3: 605261999
+      Wubsy-Bubsy-Idle-unscreen (1)_30: 345588029
+      Wubsy-Bubsy-Idle-unscreen (1)_31: -1363461126
+      Wubsy-Bubsy-Idle-unscreen (1)_32: -910598851
+      Wubsy-Bubsy-Idle-unscreen (1)_33: -2091420953
+      Wubsy-Bubsy-Idle-unscreen (1)_34: 305712749
+      Wubsy-Bubsy-Idle-unscreen (1)_4: 945585242
+      Wubsy-Bubsy-Idle-unscreen (1)_5: -1702457016
+      Wubsy-Bubsy-Idle-unscreen (1)_6: -432552758
+      Wubsy-Bubsy-Idle-unscreen (1)_7: 1474998868
+      Wubsy-Bubsy-Idle-unscreen (1)_8: -1929824358
+      Wubsy-Bubsy-Idle-unscreen (1)_9: 1098949715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

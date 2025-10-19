@@ -19,6 +19,7 @@ public class Gamemanager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
         Invoke("DisplayWASD", 2f);
+        Invoke("DisplaySprint", 4f);
     }
 
     void DisplayWASD()
@@ -26,6 +27,14 @@ public class Gamemanager : MonoBehaviour
         if (!displayedWASD)
         {
             WarningFlash.Instance.FlashWarningImage();
+        }
+    }
+
+    void DisplaySprint()
+    {
+        if (!displayedWASD)   
+        {
+            WarningFlash.Instance.FlashWarning("HOLD SHIFT TO SPRINT", 80);
             displayedWASD = true;
         }
     }
