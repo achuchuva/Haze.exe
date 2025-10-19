@@ -730,7 +730,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 7, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &585298626
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your mother
+  m_text: https://www.youtube.com/watch?v=dQw4w9WgXcQ
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81314761867b04607bea1941f334b66b, type: 2}
   m_sharedMaterial: {fileID: 3078861301919153206, guid: 81314761867b04607bea1941f334b66b, type: 2}
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -373.76553, y: 0, z: -351.32996, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -943,8 +943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 1365.3334, y: 266.66666}
+  m_AnchoredPosition: {x: 0, y: -225}
+  m_SizeDelta: {x: 1000, y: 825}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &709020498
 MonoBehaviour:
@@ -966,9 +966,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b296c2eab976034894f7365b7471ecb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34eccc0a991a93b4fae17f01c2b65df4, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1802,8 +1802,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25, y: -25}
-  m_SizeDelta: {x: 90, y: 40}
+  m_AnchoredPosition: {x: -40, y: -145}
+  m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1450639938
 MonoBehaviour:
