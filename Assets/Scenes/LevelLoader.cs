@@ -44,6 +44,17 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LevelLoad(levelName));
     }
 
+    public void EndGame()
+    {
+        // Play animation
+        transition.SetTrigger("WhiteEnd");
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
     public void Quit()
     {
         Debug.Log("Quit");

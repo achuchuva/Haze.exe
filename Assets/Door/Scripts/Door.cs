@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class Door : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class Door : MonoBehaviour
     public ParticleSystem particleSystem;
     public Image icon;
     public bool endingDoor = false;
+    public bool endGameDoor = false;
+    public AudioSource completionMusic;
+    public AudioSource mazeMusic;
     public string sceneToLoad = "Level 2";
 
     DoorManager.DoorSettings doorSettings;
@@ -28,6 +32,7 @@ public class Door : MonoBehaviour
     public bool Close { get; set; } = false;
     public bool Far { get; set; } = false;
     bool endingTriggered = false;
+    bool completionMusicPlayed = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -47,7 +52,24 @@ public class Door : MonoBehaviour
         if (endingDoor && distance < 8f && !endingTriggered)
         {
             endingTriggered = true;
-            LevelLoader.Instance.LoadNextMazeLevel(sceneToLoad);
+            if (endGameDoor)
+            {
+                LevelLoader.Instance.EndGame();
+            }
+            else
+            {
+                LevelLoader.Instance.LoadNextMazeLevel(sceneToLoad);
+            }
+        }
+
+        if (endGameDoor && distance < 20f && !completionMusicPlayed)
+        {
+            completionMusicPlayed = true;
+            if (mazeMusic.isPlaying)
+            {
+                // Fade out maze music
+                StartCoroutine(FadeOut(mazeMusic, 1f));
+            }
         }
 
         // Attempt to acquire focus if this door is a valid candidate
@@ -197,5 +219,33 @@ public class Door : MonoBehaviour
             collectPrompt.SetActive(false);
             focusedDoor = null;
         }
+    }
+
+    public IEnumerator FadeOut (AudioSource audioSource, float FadeTime) {
+        float startVolume = audioSource.volume;
+
+        while (audioSource.volume > 0) {
+            audioSource.volume -= startVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        audioSource.Stop ();
+        audioSource.volume = startVolume;
+        StartCoroutine(FadeIn(completionMusic, FadeTime));
+    }
+
+    public IEnumerator FadeIn (AudioSource audioSource, float FadeTime) {
+        float targetVolume = audioSource.volume;
+        audioSource.volume = 0;
+        audioSource.Play();
+
+        while (audioSource.volume < targetVolume) {
+            audioSource.volume += targetVolume * Time.deltaTime / FadeTime;
+
+            yield return null;
+        }
+
+        audioSource.volume = targetVolume;
     }
 }

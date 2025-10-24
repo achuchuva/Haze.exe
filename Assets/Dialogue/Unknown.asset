@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e3f086666e4e794cbd61e91cec35227, type: 3}
-  m_Name: Win Temp
+  m_Name: Unknown
   m_EditorClassIdentifier: 
-  name: Developer
+  name: ???
   lines:
-  - You win lol I'll finish the game later. Hit quit, go outside, touch grass.
+  - You didn't think it'd be that easy, did you?
   dialogueSounds:
-  - {fileID: 8300000, guid: 9c1584084944a40cea11aa47b3f185de, type: 3}
-  frequencyLevel: 2
-  minPitch: 0.5
-  maxPitch: 1.5
+  - {fileID: 8300000, guid: 3aad7e716ce714e60a3efb96fcc4fc4c, type: 3}
+  frequencyLevel: 5
+  minPitch: 0.1
+  maxPitch: 0.3
   stopAudioSource: 1

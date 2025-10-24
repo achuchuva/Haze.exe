@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transition: {fileID: 2770477610052733806}
   transitionTime: 1
+  mazeTransitionTime: 2
 --- !u!1 &3724496147822132056
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,6 +149,7 @@ GameObject:
   - component: {fileID: 686780512861818328}
   - component: {fileID: 4858760083346707857}
   - component: {fileID: 2770477610052733806}
+  - component: {fileID: 3600226182653627178}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -260,3 +262,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3600226182653627178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724496147822132056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5892a543562f14fb69c2c82233a8e29e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Ending
+  endingDialogue: {fileID: 11400000, guid: 16da0bfb6863046008c90bc0925fdaac, type: 2}

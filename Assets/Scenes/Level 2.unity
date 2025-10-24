@@ -1299,7 +1299,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6535,7 +6535,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14889,7 +14889,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19747,7 +19747,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -25325,7 +25325,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -32238,7 +32238,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -37427,7 +37427,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 400
+      scalar: 3000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -42847,6 +42847,9 @@ MonoBehaviour:
   particleSystem: {fileID: 6195616277064151914}
   icon: {fileID: 0}
   endingDoor: 1
+  endGameDoor: 0
+  completionMusic: {fileID: 0}
+  mazeMusic: {fileID: 0}
   sceneToLoad: Level 3
 --- !u!1 &6181675008128815302
 GameObject:
