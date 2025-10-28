@@ -243,12 +243,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2915560895926576996}
   groundCheck: {fileID: 5272657471857185710}
-  speed: 5
+  speed: 9
   gravity: -9.81
   walkSound: {fileID: 4607903019751016693}
   runSound: {fileID: 582097643911962258}
   canRun: 1
-  runSpeed: 9
+  runSpeed: 13
   runningKey: 304
 --- !u!1 &5242010300582068122
 GameObject:
@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7477931235145255105

@@ -248,4 +248,21 @@ public class Door : MonoBehaviour
 
         audioSource.volume = targetVolume;
     }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player") && endingDoor)
+        {
+            float normalizedDistance = 1f - (Vector3.Distance(door.position, other.transform.position) / 15f);
+            GlitchManager.Instance.SetEffects(normalizedDistance);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player") && endingDoor)
+        {
+            GlitchManager.Instance.Reset();
+        }
+    }
 }

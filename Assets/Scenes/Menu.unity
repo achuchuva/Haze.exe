@@ -788,23 +788,25 @@ MonoBehaviour:
     Level 1 music - Baroque (LFC - Royalty
     Free Music)
 
-
     Level 2 music - Wasteland (LFC - Royalty Free Music)
-
 
     Level
     3 music - Echoes in The Void (LFC - Royalty Free Music)
 
 
-    Menu music - Winter
-    Mist (LFC - Royalty Free Music)
+    Haze Glitch - White
+    Noise Static Loop 4 (floraphonic)
 
 
-    Mini First Person Controller (Simon Serge
-    Pasi)
+    Menu music - Winter Mist (LFC - Royalty
+    Free Music)
 
 
-    Simple FX - Cartoon Particles (Synty Studios)
+    Mini First Person Controller (Simon Serge Pasi)
+
+
+    Simple
+    FX - Cartoon Particles (Synty Studios)
 
 
 '
@@ -1339,6 +1341,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996026805}
   m_CullTransparentMesh: 1
+--- !u!1 &1117409531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1117409532}
+  - component: {fileID: 1117409533}
+  m_Layer: 0
+  m_Name: MenuVolume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1117409532
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117409531}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1117409533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117409531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 38fd42ca0baa28b41bf8c83edf72f9c1, type: 2}
 --- !u!1 &1178144597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2350,7 +2401,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -2840,3 +2891,4 @@ SceneRoots:
   - {fileID: 97676440}
   - {fileID: 1223112078}
   - {fileID: 1310053212}
+  - {fileID: 1117409532}

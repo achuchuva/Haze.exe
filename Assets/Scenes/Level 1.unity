@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 22513085}
   - component: {fileID: 22513084}
   - component: {fileID: 22513083}
+  - component: {fileID: 22513086}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -4977,6 +4978,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &22513086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22513081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &68081590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5140,6 +5153,7 @@ GameObject:
   - component: {fileID: 110012574}
   - component: {fileID: 110012573}
   - component: {fileID: 110012572}
+  - component: {fileID: 110012575}
   m_Layer: 0
   m_Name: Haze5
   m_TagString: Haze
@@ -9986,6 +10000,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &110012575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110012570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &158980536
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,7 +10519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218319023
@@ -10596,7 +10622,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219103698
@@ -10804,6 +10830,7 @@ GameObject:
   - component: {fileID: 240292506}
   - component: {fileID: 240292505}
   - component: {fileID: 240292504}
+  - component: {fileID: 240292507}
   m_Layer: 0
   m_Name: Haze3 (1)
   m_TagString: Haze
@@ -15650,6 +15677,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &240292507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240292502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &257745337
 GameObject:
   m_ObjectHideFlags: 0
@@ -15952,6 +15991,7 @@ GameObject:
   - component: {fileID: 296945878}
   - component: {fileID: 296945877}
   - component: {fileID: 296945876}
+  - component: {fileID: 296945879}
   m_Layer: 0
   m_Name: Haze4
   m_TagString: Haze
@@ -20798,6 +20838,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &296945879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296945874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &297853049
 GameObject:
   m_ObjectHideFlags: 0
@@ -21391,6 +21443,7 @@ GameObject:
   - component: {fileID: 445238438}
   - component: {fileID: 445238437}
   - component: {fileID: 445238436}
+  - component: {fileID: 445238439}
   m_Layer: 0
   m_Name: Haze
   m_TagString: Haze
@@ -26237,6 +26290,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &445238439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445238434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1001 &482995975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26306,6 +26371,7 @@ GameObject:
   - component: {fileID: 484093227}
   - component: {fileID: 484093226}
   - component: {fileID: 484093225}
+  - component: {fileID: 484093228}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -31152,6 +31218,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &484093228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484093223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &500212483
 GameObject:
   m_ObjectHideFlags: 0
@@ -31164,6 +31242,7 @@ GameObject:
   - component: {fileID: 500212487}
   - component: {fileID: 500212486}
   - component: {fileID: 500212485}
+  - component: {fileID: 500212488}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -36010,6 +36089,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &500212488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500212483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &522454731
 GameObject:
   m_ObjectHideFlags: 0
@@ -36544,7 +36635,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.25
+      value: -3.445
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.y
@@ -36552,7 +36643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 60
+      value: 63
       objectReference: {fileID: 0}
     - target: {fileID: 5238820401998598406, guid: f2e0b7ae4dae8cf44955bccd3512b213, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36683,6 +36774,7 @@ GameObject:
   - component: {fileID: 659488707}
   - component: {fileID: 659488706}
   - component: {fileID: 659488705}
+  - component: {fileID: 659488708}
   m_Layer: 0
   m_Name: Haze
   m_TagString: Haze
@@ -41529,6 +41621,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &659488708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659488703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &669935892
 GameObject:
   m_ObjectHideFlags: 0
@@ -41566,7 +41670,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &669935894
@@ -43401,6 +43505,7 @@ GameObject:
   - component: {fileID: 1090963544}
   - component: {fileID: 1090963543}
   - component: {fileID: 1090963542}
+  - component: {fileID: 1090963545}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -48247,6 +48352,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1090963545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090963540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1127626596
 GameObject:
   m_ObjectHideFlags: 0
@@ -48302,6 +48419,7 @@ GameObject:
   - component: {fileID: 1152228381}
   - component: {fileID: 1152228380}
   - component: {fileID: 1152228379}
+  - component: {fileID: 1152228382}
   m_Layer: 0
   m_Name: Haze3 (2)
   m_TagString: Haze
@@ -53148,6 +53266,179 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1152228382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152228377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
+--- !u!1 &1165211444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1165211445}
+  - component: {fileID: 1165211447}
+  - component: {fileID: 1165211446}
+  - component: {fileID: 1165211448}
+  m_Layer: 0
+  m_Name: Glitch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1165211445
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165211444}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1165211446
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165211444}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 510cd6cd535bf4dd4b9b213bed2b3017, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.6
+  m_Pitch: 0.4
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1165211447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165211444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f53d1f251c949ac8a113c76a42fc20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GlitchManager
+  volume: {fileID: 1165211448}
+--- !u!114 &1165211448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165211444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 72563c3709f754dab99b2f8c55578ab4, type: 2}
 --- !u!1 &1170955906
 GameObject:
   m_ObjectHideFlags: 0
@@ -53235,6 +53526,7 @@ GameObject:
   - component: {fileID: 1174806829}
   - component: {fileID: 1174806828}
   - component: {fileID: 1174806827}
+  - component: {fileID: 1174806830}
   m_Layer: 0
   m_Name: Haze5
   m_TagString: Haze
@@ -58081,6 +58373,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1174806830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174806825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1186975035
 GameObject:
   m_ObjectHideFlags: 0
@@ -59413,6 +59717,7 @@ GameObject:
   - component: {fileID: 1360002714}
   - component: {fileID: 1360002713}
   - component: {fileID: 1360002712}
+  - component: {fileID: 1360002715}
   m_Layer: 0
   m_Name: Haze5
   m_TagString: Haze
@@ -64259,6 +64564,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1360002715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360002710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1377456305
 GameObject:
   m_ObjectHideFlags: 0
@@ -65206,6 +65523,7 @@ GameObject:
   - component: {fileID: 1558085661}
   - component: {fileID: 1558085660}
   - component: {fileID: 1558085659}
+  - component: {fileID: 1558085662}
   m_Layer: 0
   m_Name: Haze4
   m_TagString: Haze
@@ -70052,6 +70370,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1558085662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558085657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1597756936
 GameObject:
   m_ObjectHideFlags: 0
@@ -70064,6 +70394,7 @@ GameObject:
   - component: {fileID: 1597756940}
   - component: {fileID: 1597756939}
   - component: {fileID: 1597756938}
+  - component: {fileID: 1597756941}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -74910,6 +75241,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1597756941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597756936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1629147716
 GameObject:
   m_ObjectHideFlags: 0
@@ -75072,6 +75415,7 @@ GameObject:
   - component: {fileID: 1631250663}
   - component: {fileID: 1631250662}
   - component: {fileID: 1631250661}
+  - component: {fileID: 1631250664}
   m_Layer: 0
   m_Name: Haze4
   m_TagString: Haze
@@ -79918,6 +80262,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1631250664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631250659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1631837439
 GameObject:
   m_ObjectHideFlags: 0
@@ -80166,6 +80522,7 @@ GameObject:
   - component: {fileID: 1653254154}
   - component: {fileID: 1653254153}
   - component: {fileID: 1653254152}
+  - component: {fileID: 1653254155}
   m_Layer: 0
   m_Name: Haze4
   m_TagString: Haze
@@ -85012,6 +85369,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1653254155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653254150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1690109700
 GameObject:
   m_ObjectHideFlags: 0
@@ -85236,7 +85605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 40}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719207729
@@ -85450,6 +85819,7 @@ GameObject:
   - component: {fileID: 1724609103}
   - component: {fileID: 1724609102}
   - component: {fileID: 1724609101}
+  - component: {fileID: 1724609104}
   m_Layer: 0
   m_Name: Haze4
   m_TagString: Haze
@@ -90296,6 +90666,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1724609104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724609099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1757841806
 GameObject:
   m_ObjectHideFlags: 0
@@ -90418,6 +90800,7 @@ GameObject:
   - component: {fileID: 1848952015}
   - component: {fileID: 1848952014}
   - component: {fileID: 1848952013}
+  - component: {fileID: 1848952016}
   m_Layer: 0
   m_Name: Haze
   m_TagString: Haze
@@ -95264,6 +95647,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1848952016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848952011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &1875226817
 GameObject:
   m_ObjectHideFlags: 0
@@ -96097,6 +96492,7 @@ GameObject:
   - component: {fileID: 2009942978}
   - component: {fileID: 2009942977}
   - component: {fileID: 2009942976}
+  - component: {fileID: 2009942979}
   m_Layer: 0
   m_Name: Haze3
   m_TagString: Haze
@@ -100943,6 +101339,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 7.25, y: 1.5, z: 7.25}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2009942979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009942974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55d5ba4ac43fd4bc684f39ed64dcec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Glitch
 --- !u!1 &2020049736
 GameObject:
   m_ObjectHideFlags: 0
@@ -107339,6 +107747,7 @@ GameObject:
   - component: {fileID: 8456715208471394178}
   - component: {fileID: 1785406126261343829}
   - component: {fileID: 6007530302139704120}
+  - component: {fileID: 8456715208471394179}
   m_Layer: 0
   m_Name: EndingDoor
   m_TagString: Untagged
@@ -107426,6 +107835,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!65 &8456715208471394179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828110100844793578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 2, z: 15}
+  m_Center: {x: 0, y: 1, z: -7.5}
 --- !u!33 &8629082645072900564
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -107567,3 +107997,4 @@ SceneRoots:
   - {fileID: 1127626597}
   - {fileID: 541339530}
   - {fileID: 536455063}
+  - {fileID: 1165211445}

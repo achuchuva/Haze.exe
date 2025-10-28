@@ -41,6 +41,7 @@ public class NPC : MonoBehaviour
         {
             hazeRemoved = true;
             WarningFlash.Instance.FlashWarning("HAZE CLEARED", 70);
+            GlitchManager.Instance.DisableEffects();
         }
     }
 

@@ -26,7 +26,7 @@ public class Minimap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        doorCountText.text = "Doors Remaining: " + DoorManager.Instance.doorCount.ToString();
+        doorCountText.text = "Doors Remaining: " + Mathf.Ceil(DoorManager.Instance.doorCount / 2f).ToString();
 
         if (Locked) return;
 
