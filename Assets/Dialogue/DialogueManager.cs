@@ -64,6 +64,8 @@ public class DialogueManager : MonoBehaviour
 
     public void NextLine()
     {
+        if (Pause.Instance.Paused) return;
+
         if (isTyping)
         {
             // If still typing, instantly show full line

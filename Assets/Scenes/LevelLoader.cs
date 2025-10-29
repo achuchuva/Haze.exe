@@ -34,6 +34,16 @@ public class LevelLoader : MonoBehaviour
         
     }
 
+    public void Play()
+    {
+        string lastScene = "Level 1";
+        if (PlayerPrefs.HasKey("LastScene"))
+        {
+            lastScene = PlayerPrefs.GetString("LastScene");
+        }
+        LoadLevel(lastScene);
+    }
+
     public void LoadLevel(string levelName)
     {
         StartCoroutine(Load(levelName));
@@ -47,6 +57,7 @@ public class LevelLoader : MonoBehaviour
     public void EndGame()
     {
         // Play animation
+        PlayerPrefs.DeleteKey("LastScene");
         transition.SetTrigger("WhiteEnd");
     }
 

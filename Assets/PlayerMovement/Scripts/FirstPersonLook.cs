@@ -28,7 +28,7 @@ public class FirstPersonLook : MonoBehaviour
 
     void Update()
     {
-        if (Disabled) return;
+        if (Disabled || Pause.Instance.Paused) return;
 
         // Get smooth velocity.
         Vector2 mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));

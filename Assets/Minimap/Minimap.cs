@@ -93,6 +93,7 @@ public class Minimap : MonoBehaviour
 
     public void MinimapClick(Vector3 position)
     {
+        if (Pause.Instance.Paused) return;
         OnMinimapClick?.Invoke(position);
     }
 }

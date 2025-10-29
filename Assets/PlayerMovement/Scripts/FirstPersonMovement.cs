@@ -21,7 +21,7 @@ public class FirstPersonMovement : MonoBehaviour
 
     void Update()
     {
-        if (Disabled)
+        if (Disabled || Pause.Instance.Paused)
         {
             walkSound.Stop();
             runSound.Stop();

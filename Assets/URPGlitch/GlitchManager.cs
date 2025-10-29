@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using URPGlitch;
 
 public class GlitchManager : MonoBehaviour
 {
     public static GlitchManager Instance;
+    public bool GlitchEffectEnabled;
     [SerializeField] private Volume volume;
     private bool isEnabled = true;
 
@@ -31,6 +33,19 @@ public class GlitchManager : MonoBehaviour
         }
     }
 
+    public void SetGlitchEffect(bool isEnabled)
+    {
+        GlitchEffectEnabled = isEnabled;
+        if (!GlitchEffectEnabled)
+        {
+            DisableEffects();
+        }
+        else if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            EnableEffects();
+        }
+    }
+
     private void Start()
     {
         volume.profile.TryGet<AnalogGlitchVolume>(out analogGlitchVolume);
@@ -42,11 +57,15 @@ public class GlitchManager : MonoBehaviour
         intensity = digitalGlitchVolume.intensity.value;
         glitchAudioSource = GetComponent<AudioSource>();
         glitchPitch = glitchAudioSource.pitch;
-        DisableEffects();
+        if (GlitchEffectEnabled && SceneManager.GetActiveScene().name == "Menu")
+            EnableEffects();
+        else
+            DisableEffects();
     }
 
     public void EnableEffects()
     {
+        if (!GlitchEffectEnabled) return;
         isEnabled = true;
         if (glitchAudioSource != null && !glitchAudioSource.isPlaying)
             glitchAudioSource.Play();
@@ -84,6 +103,7 @@ public class GlitchManager : MonoBehaviour
 
     public void SetEffects(float intensity)
     {
+        if (!GlitchEffectEnabled) return;
         intensity = Mathf.Clamp(intensity, 0f, 0.4f);
         if (glitchAudioSource != null && !glitchAudioSource.isPlaying)
             glitchAudioSource.Play();

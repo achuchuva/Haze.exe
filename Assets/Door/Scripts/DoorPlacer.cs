@@ -80,7 +80,7 @@ public class DoorPlacer : MonoBehaviour
 
     void UpdateInput()
     {
-        if (Disabled) return;
+        if (Disabled || Pause.Instance.Paused) return;
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
