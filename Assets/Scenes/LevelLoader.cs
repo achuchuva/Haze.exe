@@ -36,10 +36,10 @@ public class LevelLoader : MonoBehaviour
 
     public void Play()
     {
-        string lastScene = "Level 1";
-        if (PlayerPrefs.HasKey("LastScene"))
+        string lastScene = PlayerPrefs.GetString("LastScene");
+        if (lastScene == string.Empty)
         {
-            lastScene = PlayerPrefs.GetString("LastScene");
+            lastScene = "Level 1";
         }
         LoadLevel(lastScene);
     }

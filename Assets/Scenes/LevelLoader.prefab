@@ -275,3 +275,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Ending
   endingDialogue: {fileID: 11400000, guid: 16da0bfb6863046008c90bc0925fdaac, type: 2}
+  dialoguePanel: {fileID: 0}
+  canvasImage: {fileID: 0}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Pause : MonoBehaviour
 {
@@ -56,6 +57,6 @@ public class Pause : MonoBehaviour
     public void ResetTime()
     {
         Time.timeScale = 1f;
-        PlayerPrefs.SetString("LastScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
     }
 }
